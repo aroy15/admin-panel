@@ -1,0 +1,611 @@
+/***************************/
+/* common classes */
+/***************************/
+.content-container{
+ max-width:1700px;
+ width:100%;
+ margin:auto;
+ background-color: $white;
+	box-shadow:$basic-shadow;
+	overflow:hidden;
+	position:relative;
+	.preloader-js{
+		position:absolute;
+		top:0;
+		left:0;
+		width:100%;
+		height:100%;
+		backdrop-filter: blur(15px);
+		z-index:9;
+		.preloader-area{
+			position:absolute;
+			top:0;
+			left:0;
+			width:100%;
+			height:100%;
+			.preloader_img{
+				img{
+					animation: preloadRotate 750ms 300ms infinite;
+					-webkit-animation: preloadRotate 750ms 300ms infinite;
+					width:100px;
+					height:100px;
+				}			
+			}
+		}
+	}
+ .content-inner{
+  max-width:1100px;
+  width:100%;
+  margin:auto;
+  padding:20px;
+ } 
+}
+@keyframes preloadRotate {
+	to {
+				@include transform-rotate(180deg);
+	}
+}
+.text-bold{
+	font-weight:400;
+}
+.text-normal{
+	font-weight:300;
+}
+.page-heading{
+	font-size:20px;
+}
+.p-20{
+ padding:20px;
+}
+.cursor-pointer{
+ cursor:pointer;
+}
+.border-radius-common, .b-r-5{
+ @include b-radius(5px);
+}
+.b-r-8{
+	@include b-radius(8px);
+}
+.b-r-50{
+	@include b-radius(50%);
+}
+.transition-common{
+ transition:0.3s;
+ -webkit-transition:0.3s;
+ -moz-transition:0.3s;
+ -ms-transition:0.3s;
+ -o-transition:0.3s;
+}
+.transition-5{
+	transition:0.5s;
+	-webkit-transition:0.5s;
+	-moz-transition:0.5s;
+	-ms-transition:0.5s;
+	-o-transition:0.5s;
+}
+/* Fade in Animation */
+.fade-in-custom-animation {
+	animation-name: fade-in-custom-animation;
+	animation-duration: 2s;
+}
+@keyframes fade-in-custom-animation {
+	0%   {opacity:0;}
+	100% {opacity:1;}
+}
+.v-hidden{
+ visibility: hidden;
+}
+.v-visible{
+ visibility:visible;
+}
+/*---.dismiss-w-h this class will be use when display:none property not working---*/
+.dismiss-w-h{
+	min-width:0 !important;
+	max-width:0 !important;
+	min-height:0 !important;
+	max-height: 0 !important;
+	overflow:hidden !important;
+	opacity: 0 !important;
+	position: absolute;
+}
+/*---.opacity-h-0 Spacially use for Sidebar nav animation---*/
+.opacity-h-0{
+	opacity:0;
+	height:0px;
+	visibility: hidden;
+	overflow:hidden;
+	@include transform-scale(0.8);
+}
+.dismiss-click-js{
+	cursor:pointer;
+}
+.display-block{
+ display:block;
+}
+.display-none{
+ display:none;
+}
+.small-text{
+ font-size:11px;
+}
+.h-80px-oy{
+	height:80px;
+	overflow-x:hidden;
+	overflow-y:auto;
+}
+/*Custom button*/
+.custom-btn{
+ border-radius:5px;
+ -webkit-border-radius:5px;
+ -moz-border-radius:5px;
+ -ms-border-radius:5px;
+ -o-border-radius:5px;
+ padding: 8px 25px;
+ cursor:pointer;
+ text-align:center;
+}
+.del-button{
+	background-color:rgba(255, 0, 1, 0.4);
+	color:#ffffff;
+	@include b-radius(5px);
+	padding:5px 10px;
+	&:hover{
+		color:#ffffff;
+		background-color:rgba(255, 0, 1, 0.5);
+	}
+}
+.bg-blue-c{
+ background:$skyblue;
+}
+[class*="btn-"], [class*="-btn"]{
+	cursor:pointer;
+} 
+.btn-50-150{
+ width:150px;
+ height:50px;
+ line-height:200%;
+ padding:10px;
+ text-align:center;
+ margin:8px;
+ @include b-radius-5px();
+}
+.btn-48{
+ height:48px;
+}
+.btn-60{
+ height:60px;
+}
+.btn-60-200{
+	min-width:200px;
+	height:60px;
+}
+.btn-green-c{
+ background-color:$green2;
+ color:$white;
+}
+.bg-gray{
+ background-color:$gray-light1;
+}
+.btn-blue-c{
+ background-color:$blue;
+ color:$white;
+}
+.btn-skyblue-c{
+ background:$skyblue;
+	color:$white;
+	@include transition-all(0.3s);
+}
+.btn-green-c,.btn-skyblue-c,.btn-blue-c{
+	&:hover{
+		color:$white;
+		background:$skyblue3;
+		box-shadow: 0px 0px 9px rgba(0,0,0,.3) !important;
+	}
+}
+.btn-gray-c{
+ background-color:$gray2;
+ color:$black-light;
+}
+.font-extra-small{
+ font-size:10px;
+}
+.overflow-hidden{
+ overflow:hidden;
+}
+.custom_input_border{
+ height:43px;
+ padding:10px;
+ border:1px solid $skyblue3 !important;
+ background-color:$white !important;
+ font-size:15px;
+ &::placeholder{
+  color:$gray2;
+ }
+}
+.input-common{
+ height:46px;
+ padding:10px;
+ font-size:15px;
+ width:100%;
+ @include b-radius-5px();
+}
+
+.checkbox-container {
+ display: block;
+ position: relative;
+ padding-left: 35px;
+ margin-bottom: 12px;
+ cursor: pointer;
+ font-size: 15px;
+ -webkit-user-select: none;
+ -moz-user-select: none;
+ -ms-user-select: none;
+ user-select: none;
+ input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+ }
+ .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 23px;
+  width: 23px;
+		background-color:$gray2;
+		@include b-radius-5px;
+ }
+ input:checked ~ .checkmark {
+  background-color: $green;
+ }
+ .checkmark:after {
+  content: '';
+  position: absolute;
+  left: 7px;
+  top: 11px;
+  width: 10px;
+  height: 2px;
+  border: 1px solid white;
+ }
+ input:checked ~ .checkmark:after {
+  display: block;
+  left: 9px;
+  top: 3px;
+  width: 7px;
+  height: 12px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+ }
+}
+.upload-icon-div{
+ label.upload-inner{
+  max-width: 245px;
+		width:100%;
+  height: 154px;
+  margin:auto;
+  text-align: center;
+  img.upload-icon{
+   width:100%;
+			height:154px;
+			@include transition-all(0.3s);
+			@include b-radius(5px);
+			&:hover{
+				box-shadow: 0 0 12px rgba(0,0,0,0.5);
+				@include transform-scale(0.98);
+}
+  }
+  .upload-icon-text{
+   margin-top:-50px;
+  }
+  input[type="file"]{
+   display:none;
+  }
+	}
+	&~ .received-up-data{
+		font-size:12px;
+		color:$gray;
+	}
+}
+.select-custom {
+ font-size: 15px;
+ cursor: pointer;
+ appearance: none;
+ -webkit-appearance: none;
+ -moz-appearance: none;
+ -o-appearance: none;
+ -ms-appearance: none;
+ background-image: url('../img/icons/option-icon.png');
+ background-repeat: no-repeat;
+	background-position: calc(100% - 16px) center;
+	height:40px;
+}
+.select-statistics {
+	background-image: url('../img/icons/carret-down.png');
+	background-position: calc(100% - 10px) center;
+	background-color: $skyblue !important;
+	background-repeat:no-repeat;
+	min-width: 100px;
+	height: auto !important;
+	padding: 5px 30px 5px 10px;
+	color: rgba(255, 255, 255, 0.9);
+	font-weight: bold;
+	font-size: 16px;
+ cursor: pointer;
+ appearance: none;
+ -webkit-appearance: none;
+ -moz-appearance: none;
+ -o-appearance: none;
+ -ms-appearance: none;
+	right: 8px;
+	top: 8px;
+	@include transition-all(0.2s);
+	&:hover{
+		background-color:$skyblue3 !important;
+		box-shadow: $btn-shadow;
+	}
+}
+.transform-top-to-center{
+ top:50% !important;
+ transform:translateY(-50%);
+ -webkit-transform:translateY(-50%);
+ -moz-transform:translateY(-50%);
+ -ms-transform:translateY(-50%);
+ -o-transform:translateY(-50%);
+}
+.transform-left-to-center{
+ left:50% !important;
+ transform:translateX(-50%);
+ -webkit-transform:translateX(-50%);
+ -moz-transform:translateX(-50%);
+ -ms-transform:translateX(-50%);
+ -o-transform:translateX(-50%);
+}
+.b-r-10{
+ border-radius:10px;
+ -webkit-border-radius:10px;
+ -moz-border-radius:10px;
+ -ms-border-radius:10px;
+ -o-border-radius:10px;
+}
+/****Switch Box design****/
+
+input[type="checkbox"].switch_box{
+	font-size: 18px;
+	-webkit-appearance: none;
+	   -moz-appearance: none;
+	        appearance: none;
+	width: 48px;
+	height: 27px;
+	background: $gray2 !important;
+	border-radius: 3em;
+	position: relative;
+	cursor: pointer;
+	outline: none;
+	-webkit-transition: all .2s ease-in-out;
+ transition: all .2s ease-in-out;
+ &:checked{
+  background: $skyblue !important;
+ }
+ &:after{
+  position: absolute;
+  content: "";
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #fff;
+  -webkit-box-shadow: 0 0 .25em rgba(0,0,0,.3);
+          box-shadow: 0 0 .25em rgba(0,0,0,.3);
+  -webkit-transform: scale(.7);
+          transform: scale(.7);
+  left: -2px;
+  top:-1px;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+ }
+ &:checked:after{
+  left: calc(100% - 27px);
+  top: -1px;
+ }
+}
+/*======Swich Checkbox Two=====*/
+.swich-checkbox{
+	cursor:pointer;
+	.input-swich {
+		-webkit-appearance: none;
+	   -moz-appearance: none;
+	   -ms-appearance: none;
+	   -o-appearance: none;
+	        appearance: none;
+		&~ {
+			.s_iconarea{
+				.check_swichicon{
+					width:38px;
+					height:22px;					
+					@include b-radius(60px);
+					background-color:#ff0001;
+					position:relative;
+					overflow:hidden;
+					&::before{
+						content: '';
+						width: 17px;
+						height: 17px;
+						background-color: #ffffff;
+						position: absolute;
+						left: 2px;
+						top: 2px;
+						@include b-radius(50%);
+						@include transition-all(0.3s);
+						box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);
+					}
+				}
+			}
+		}
+		&:checked ~ {
+			.s_iconarea{
+				.check_swichicon{
+					background-color:$green2;
+					&::before{
+						left: 19px;
+						top: 2px;
+					}
+				}
+			}
+		}
+	}
+}
+/*====== End of Swich Checkbox Two=====*/
+/*======Radio box Two=====*/
+.round-radiobox{
+	cursor:pointer;
+	.input-radio {
+		-webkit-appearance: none;
+	   -moz-appearance: none;
+	   -ms-appearance: none;
+	   -o-appearance: none;
+	        appearance: none;
+		&~ {
+			.radio_iconarea{
+				.check_radioicon{
+					width:22px;
+					height:22px;					
+					@include b-radius(50%);
+					background-color:$gray3;
+					position:relative;
+					overflow:hidden;
+					&::before{
+						content: '';
+						width: 12px;
+						height: 12px;
+						background-color: #ffffff;
+						position: absolute;
+						left: 5px;
+						top: 5px;
+						@include b-radius(50%);
+						@include transition-all(0.3s);
+						box-shadow: 0 0 10px 0 rgba(0,0,0,.3);
+						display:none;
+					}
+				}
+			}
+		}
+		&:checked ~ {
+			.radio_iconarea{
+				.check_radioicon{
+					background-color:$green2;
+					&::before{
+						display:block;
+					}
+				}
+			}
+		}
+	}
+}
+/*====== End of Radio box Two=====*/
+/*====Tags Design====*/
+.tags-area{
+	.tag-item{
+		background-color:$gray-light1;
+		display: inline-block;
+		padding: 8px 35px 8px 25px;
+		margin-right:8px;
+		.tag-content{
+			.t_hash{
+				color:$skyblue;
+			}
+		}
+		.close{
+			color:$gray;
+			padding: 6px;
+   font-weight: bold;
+		}
+		&:last-child{
+			margin-right:0px;
+		}
+	}
+}
+/*=====End of Tags Design*/
+/*==========Full Screen Icon Design=========*/
+.full-screen-wrap {
+	min-width: 24px;
+	width:24px;
+	height: 24px;
+	position: relative;
+	cursor: pointer;
+	.fs-bar{
+		width: 2px;
+		height: 8px;
+		background: mintcream;
+		position: absolute;
+		transition: all 0.5s ease-in-out;
+		&.top-left-horiz, &.top-right-horiz, &.bottom-left-horiz, &.bottom-right-horiz {
+			width: 8px;
+			height: 2px;
+		}
+		&.top-left, &.top-left-horiz {
+			top: 0;
+			left: 0;
+		}
+		&.top-right, &.top-right-horiz {
+			top: 0;
+			right: 0;
+		}
+		&.bottom-left, &.bottom-left-horiz {
+			bottom: 0;
+			left: 0;
+		}
+		&.bottom-right, &.bottom-right-horiz {
+			bottom: 0;
+			right: 0;
+		}
+		&.animMoveDown {
+			transform: translateY(7px);
+		}
+		&.animMoveUp {
+			transform: translateY(-7px);
+		}
+		&.animMoveLeft {
+			transform: translateX(-7px);
+		}
+		&.animMoveRight{
+			transform: translateX(7px);
+		}
+	}
+}
+
+
+
+.bottom-bar {
+	width: 100%;
+	background: #34495e;
+	height: 60px;
+	position: relative;
+	bottom: 0;
+}
+
+/*==========End of Full Screen Icon Design=========*/
+/****Custom Scroll Bar Design*****/
+.custom-scroll-bar{
+		//  width 
+	&::-webkit-scrollbar {
+		width: 8px;
+	}
+	 // Track 
+	&::-webkit-scrollbar-track {
+		box-shadow: inset 0 0 4px rgba(238, 238, 238, 1);
+		@include b-radius(2.5px);
+}
+	 // Handle 
+	&::-webkit-scrollbar-thumb {
+		background: rgba(71, 180, 234, 0.2); 
+		@include b-radius(4px);
+	}
+	 // Handle on hover 
+	&::-webkit-scrollbar-thumb:hover {
+		background:  rgba(71, 180, 234, 0.25); 
+	}
+}

@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Social Customize</title>
+ <!-- google fonts -->
+ <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap" rel="stylesheet">
+ <!-- fontawesome -->
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+ <!-- bootstrap css -->
+	<link rel="stylesheet" href="vendors/css/bootstrap.min.css">
+	<!-- jQuery UI CSS -->
+	<link rel="stylesheet" href="vendors/css/jquery-ui.min.css">
+	<!-- Perfect Scrollbar css -->
+	<link rel="stylesheet" href="vendors/css/perfect-scrollbar.css">
+ <!-- style css -->
+ <link rel="stylesheet" href="./resources/css/main.css">
+</head>
+<body>
+	 <!--=== Header Menu ===-->
+  <header id="headerMenu" class="px-3">
+			<div class="row h-82 align-items-center justify-content-center justify-content-lg-between">
+					<div class="col-lg-6 col-xl-6 d-flex order-2 order-lg-1 py-3 py-lg-0">
+							<a href="#" id="menuBar" class="h-icons menu_bar_icon">
+									<span class="hambarger"></span>
+							</a>
+							<button class="h-icons full-screen-wrap bg-transparent" onclick="$(document).toggleFullScreen()">
+								<span class="top-left fs-bar"></span>
+								<span class="top-left-horiz fs-bar"></span>
+								<span class="top-right fs-bar"></span>
+								<span class="top-right-horiz fs-bar"></span>
+								<span class="bottom-left fs-bar"></span>
+								<span class="bottom-left-horiz fs-bar"></span>
+								<span class="bottom-right fs-bar"></span>
+								<span class="bottom-right-horiz fs-bar"></span>
+						</button>       
+							<a href="#" id="settings-icon" class="h-icons settings_icon d-flex">
+									<div><img src="resources/img/icons/settings.png" alt="settings"></div>
+									<span class="pl-2">Settings</span>
+							</a>
+							<a href="#" class="site-logo">
+									<img src="resources/img/Logo-UC.png" alt="Site logo">
+							</a>
+					</div>
+					<div class="col-lg-6 col-xl-6 d-flex order-1 order-lg-2 py-3 py-lg-0 align-items-center justify-content-between justify-content-xl-end text-center">
+							<a href="#" class="h-icons2 h-task">
+									<img src="resources/img/icons/paste.png" alt="My tasks">
+									<span class="d-block text-nowrap">My Tasks</span>
+							</a>
+							<a href="#" class="h-icons2 h-shop">
+									<img src="resources/img/icons/bag.png" alt="My tasks">
+									<span class="d-block">Shop</span>
+							</a>
+							<a href="support-tickets.html" class="h-icons2 h-support">
+									<img src="resources/img/icons/headphone.png" alt="support">
+									<span class="d-block">Support</span>
+							</a>
+							<a href="new-support-ticket.html" class="h-icons2 h-helpdesk">
+									<img src="resources/img/icons/help.png" alt="helpDesk">
+									<span class="d-block">HelpDesk</span>
+							</a>         
+							<a href="#" class="h-icons2 h-history">
+									<img src="resources/img/icons/clock.png" alt="History">
+									<span class="d-block">History</span>
+							</a>                
+							<div class="profile-photoss pl-xl-5 pl-lg-4 pr-xl-4 d-flex flex-column flex-sm-row align-items-center">
+									<span class="user-name pr-0 pr-sm-3 order-2 order-sm-1">Emely Guerrero</span>
+									<span class="position-relative d-block order-1 order-sm-2">
+											<a href="#" class="d-block profile_pic"><img src="resources/img/small-profile-pic.png" alt="profile picture"></a>
+											<a href="#" class="logout-icon position-absolute">
+													<img class="lgt_icons" src="resources/img/icons/logout.png" alt="Logout">
+											</a>
+								</span>         
+							</div>
+					</div>
+			</div>    
+	</header>
+	<!--===End of Header Menu ===-->
+	<!--=== Body Item  ===-->
+	<div id="bodyItem" class="body-item position-relative">
+			<!--=== Side bar ===-->
+			<nav id="sidebarNav" class="sidebar_nav nav-active">
+				<!-- Categories -->
+				<div id="navAccordion" class="transition-5">
+							<!-- Management -->
+							<div class="side_nav_item mb-3">
+								<div id="navHeadingOne">
+										<button class="item-header collapsed w-100 px-3 d-flex justify-content-between align-items-center cursor-pointer" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+										
+														<div><img src="resources/img/icons/carret.png" class="carret-icon" alt="angle"></div>
+														<h5>Management</h5>
+														<div><img src="resources/img/icons/copy-2.png" alt="create"></div>
+										</button>
+								</div>      
+								<div id="collapseOne" class="collapse" aria-labelledby="navHeadingOne" data-parent="#navAccordion">
+										<ul class="itemss pl-4 pr-3">
+												<li><a href="#">Dashboard</a></li>
+												<li><a href="#">Workflow Management</a></li>
+												<li><a href="campaign-management.html">Campaign Management</a></li>
+										</ul>
+								</div>
+						</div>
+						<!-- Content Create -->
+						<div class="side_nav_item mb-3">
+								<div id="navHeadingTwo">
+										<button class="item-header collapsed w-100 px-3 d-flex justify-content-between align-items-center cursor-pointer" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+										
+														<div><img src="resources/img/icons/carret.png" class="carret-icon" alt="angle"></div>
+														<h5>Content Create</h5>
+														<div><img src="resources/img/icons/copy-2.png" alt="create"></div>
+										</button>
+								</div>      
+								<div id="collapseTwo" class="collapse" aria-labelledby="navHeadingTwo" data-parent="#navAccordion">
+										<ul class="itemss pl-4 pr-3">
+												<li><a href="content-create-panel.html">Content Create Panel</a></li>
+												<li><a href="#">PhotoEditor</a></li>
+												<li><a href="media-center.html">MediaCenter</a></li>
+												<li><a href="#">Social-Media Templates</a></li>
+												<li><a href="#">E-Mail Templates</a></li><li><a href="caption-template.html">Caption Template</a></li>
+												
+										</ul>
+								</div>
+						</div>
+						<!-- Social Marketing -->
+						<div class="side_nav_item mb-3">
+								<div id="navHeadingThree">
+										<button class="item-header collapsed w-100 px-3 d-flex justify-content-between align-items-center cursor-pointer" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+										
+														<div><img src="resources/img/icons/carret.png" class="carret-icon" alt="angle"></div>
+														<h5>Social Marketing</h5>
+														<div><img src="resources/img/icons/social marketing.png" alt="social marketing"></div>
+										</button>
+								</div>      
+								<div id="collapseThree" class="collapse" aria-labelledby="navHeadingThree" data-parent="#navAccordion">
+										<ul class="itemss pl-4 pr-3">
+												<li><a href="#">Content Library</a></li>
+												<li><a href="#">Task Management</a></li>
+												<li><a href="social-customize.html">Social-Collection</a></li>
+												<li><a href="auto-like.html">Auto-Like</a></li>
+												<li><a href="auto-comment.html">Auto-Comment</a></li>
+												<li><a href="#">Auto-DirectMessages</a></li>
+												<li><a href="auto-follow-unfollow.html">Auto Flow Unflow / Follow Accept</a></li>
+										</ul>
+								</div>
+						</div>
+						<!-- Ads Marketing -->
+						<div class="side_nav_item mb-3">
+								<div id="navHeadingFour">
+										<button class="item-header collapsed w-100 px-3 d-flex justify-content-between align-items-center cursor-pointer" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+										
+												<div><img src="resources/img/icons/carret.png" class="carret-icon" alt="angle"></div>
+												<h5>Ads Marketing</h5>
+												<div><img src="resources/img/icons/ads.png" alt="Ads"></div>
+										</button>
+								</div>      
+								<div id="collapseFour" class="collapse" aria-labelledby="navHeadingFour" data-parent="#navAccordion">
+										<ul class="itemss pl-4 pr-3">
+												
+												<li><a href="#">Google Ads</a></li>
+												<li><a href="#">Facebook Ads</a></li>
+												<li><a href="#">Linkedin Ads</a></li>
+												<li><a href="#">Tiwtter Ads</a></li>
+										</ul>
+								</div>
+						</div>
+						<!-- Influencer Marketing -->
+						<div class="side_nav_item mb-3">
+								<div id="navHeadingFive">
+										<button class="item-header collapsed w-100 px-3 d-flex justify-content-between align-items-center cursor-pointer" data-toggle="collapse" data-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+										
+												<div><img src="resources/img/icons/carret.png" class="carret-icon" alt="angle"></div>
+												<h5>Influencer Marketing</h5>
+												<div><img src="resources/img/icons/marketing.png" alt="Influencer Marketing"></div>
+										</button>
+								</div>      
+								<div id="collapseFive" class="collapse" aria-labelledby="navHeadingFive" data-parent="#navAccordion">
+										<ul class="itemss pl-4 pr-3">
+												<li><a href="#">Marketplace</a></li>
+												<li><a href="#">Pitchdeck</a></li>
+												<li><a href="#">My Tendors (Company only)</a></li>
+												<li><a href="#">My Profile (Influencers only)</a></li>
+										</ul>
+								</div>
+						</div>
+						<!-- Mail Marketing -->
+						<div class="side_nav_item mb-3">
+								<div id="navHeadingSix">
+										<button class="item-header collapsed w-100 px-3 d-flex justify-content-between align-items-center cursor-pointer" data-toggle="collapse" data-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
+										
+												<div><img src="resources/img/icons/carret.png" class="carret-icon" alt="angle"></div>
+												<h5>Mail Marketing</h5>
+												<div><img src="resources/img/icons/mail-marketing.png" alt="Mail-Marketing"></div>
+										</button>
+								</div>      
+								<div id="collapseSix" class="collapse" aria-labelledby="navHeadingSix" data-parent="#navAccordion">
+										<ul class="itemss pl-4 pr-3">
+												<li><a href="#">Task Management</a></li>
+												<li><a href="#">Address Book / Directory</a></li>
+												<li><a href="#">Content Library</a></li>
+										</ul>
+								</div>
+						</div>
+						<!-- Interactions -->
+						<div class="side_nav_item mb-3">
+								<div id="navHeadingSeven">
+										<button class="item-header collapsed w-100 px-3 d-flex justify-content-between align-items-center cursor-pointer" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="true" aria-controls="collapseSeven">
+										
+												<div><img src="resources/img/icons/carret.png" class="carret-icon" alt="angle"></div>
+												<h5>Interactions</h5>
+												<div><img src="resources/img/icons/ineractions.png" alt="Interactions"></div>
+										</button>
+								</div>      
+								<div id="collapseSeven" class="collapse" aria-labelledby="navHeadingSeven" data-parent="#navAccordion">
+										<ul class="itemss pl-4 pr-3">
+												<li><a href="#">Social Inbox</a></li>
+												<li><a href="#">Messenger Inbox
+														Whatsapp,Skype,Telegram</a></li>
+												<li><a href="#">E-Mail Inbox</a></li>
+												<li><a href="#">Ticket Inbox</a></li>
+										</ul>
+								</div>
+						</div>
+						<!-- Analytics -->
+						<div class="side_nav_item mb-3">
+								<div id="navHeadingEight">
+										<button class="item-header collapsed w-100 px-3 d-flex justify-content-between align-items-center cursor-pointer" data-toggle="collapse" data-target="#collapseEight" aria-expanded="true" aria-controls="collapseEight">
+										
+												<div><img src="resources/img/icons/carret.png" class="carret-icon" alt="angle"></div>
+												<h5>Analytics</h5>
+												<div><img src="resources/img/icons/ineractions.png" alt="Interactions"></div>
+										</button>
+								</div>      
+								<div id="collapseEight" class="collapse" aria-labelledby="navHeadingEight" data-parent="#navAccordion">
+										<ul class="itemss pl-4 pr-3">
+												<li><a href="#">Ads Statistics</a></li>
+												<li><a href="index.html">Social Statistics</a></li>
+										</ul>
+								</div>
+						</div>
+				</div>
+				<!-- Settings -->
+				<div id="settingsList" class="settings-list transition-5 opacity-h-0">
+						<a href="#" id="settingBack" class="setting-back d-block"><i class="fa fa-angle-left pr-2" aria-hidden="true"></i>Back</a>
+						<ul class="pl-0">
+								<li><a href="#">Channels</a></li>
+								<li><a href="#">Profiles</a></li>
+								<li><a href="contract-details.html">Contract Details</a></li>
+								<li><a href="affliate-setting.html">Affiliate Settings</a></li>
+								<li><a href="team-user-management.html">user management</a></li>
+								<li><a href="#">Security</a></li>
+								<li><a href="#">Guidelines</a></li>
+						</ul>
+				</div>
+			</nav>
+			<!--=== End of Side bar ===-->
+			<!--=== Main Items ===-->
+			<main id="mainItem" class="main_item p-2 main_item-active">
+				<div class="body-header-content mb-3 p-3 pl-xl-5">
+					<div class="d-flex">
+							<h4>Social Collection</h4>
+							<div id="iIcon" class="info-icons pt-1 pl-3 cursor-pointer">
+									<img src="resources/img/icons/info-icon.png" alt="info">
+							</div>
+					</div>
+					<p class="bheadertext pl-lg-4 display-none">An interesting implication of the 2007 study concerns the use of hand sanitizers by observant Muslims. Alcohol is forbidden (haram) to Muslims. Since the alcohol in hand sanitizer is absorbed into the blood, does that make these hand sanitizers haram?</p>
+				</div>
+					<!--==*******All Frame setup on this here*********== -->
+					<!-- === Social Customize ==== -->
+					<div id="socialCustomize" class="content-container b-r-8 py-4 px-lg-3 px-xl-5">					
+						<!-- preloader container -->
+						<div class="preloader-js">
+							<div class="preloader-area d-flex justify-content-center mt-5 pt-5">
+									<div class="preloader_img mt-5 pt-5">
+											<img src="./resources/img/icons/loading.png" alt="loading image">
+									</div> 
+							</div>                   
+					</div>
+					<!--x- End of preloader container -x-->
+						<div class="p-20 position-relative">
+							<button id="printStatistics" onclick="window.print();" class="print-icon position-absolute d-none bg-transparent cursor-pointer">
+								<i class="fa fa-print" aria-hidden="true"></i>
+						</button>							  
+							<div class="row justify-content-center">								
+								<div class="col-lg-8 pr-lg-4 pb-4">
+										<ul class="nav nav-pills mb-5" id="build-tab" role="tablist">
+												<li class="nav-item">
+													<a class="nav-link btn-50-150 active" id="social-settings-tab" data-toggle="pill" href="#social-settings" role="tab" aria-controls="social-settings" aria-selected="true">Settings</a>
+												</li>
+												<li class="nav-item">
+														<a class="nav-link btn-50-150" id="social-collection-tab" data-toggle="pill" href="#social-collection" role="tab" aria-controls="social-collection" aria-selected="false">Collection</a>
+												</li>
+												<li class="nav-item">
+														<a class="nav-link btn-50-150" id="social-statistics-tab" data-toggle="pill" href="#social-statistics" role="tab" aria-controls="social-statistics" aria-selected="false">Statistics</a>
+												</li>
+										</ul>
+										<div class="tab-content" id="social-tabContent">
+												<!-- Social settings tab -->
+												<div id="social-settings" class="tab-pane fade show active" role="tabpanel" aria-labelledby="social-settings-tab">
+														<div class="row justify-content-center justify-content-xl-between">
+																<div class="col-lg-5 col-md-6">
+																		<div class="row">
+																				<div class="col-sm-6 col-md-12 mb-5 mb-lg-0">
+																						<div class="profile-photo-area position-relative b-r-5 m-auto">
+																								<img src="resources/img/Ellipse-14.png" class="profile-photo text-center position-absolute" alt="profile photo">
+																								<a href="#" class="position-absolute edit-icon">
+																										<img src="resources/img/icons/edit.png" alt="edit icon">
+																								</a>
+																						</div>
+																				</div>
+																				<div class="col-sm-6 col-md-12">
+																						<div class="choose-bgcolor mt-2 mt-lg-5 pt-lg-5">
+																								<p class="pb-3 text-center">Choose Bakcground color</p>
+																								<ul class="color-group pl-0 text-center">
+																										<li>
+																												<a id="color1" class="color-icon" onclick="clr1()">#42ADE2</a>
+																										</li>
+																										<li>
+																												<a id="color2" class="color-icon active" onclick="clr2()">#E8D420</a>
+																										</li>
+																										<li>
+																												<a id="color3" class="color-icon" onclick="clr3()">#F44E4E</a>
+																										</li>
+																										<div class="clearfix"></div>
+																										<li>
+																												<a id="color4" class="color-icon" onclick="clr4()">#878BEC</a>
+																										</li>
+																										<li>
+																												<a id="color5" class="color-icon" onclick="clr5()">#BA4EBC</a>
+																										</li>
+																										<li>
+																												<a id="color6" class="color-icon" onclick="clr6()">#1DB22C</a>
+																										</li>
+																								</ul>
+																						</div>
+																				</div>                
+																		</div>              
+																</div>
+																<div class="col-lg-7 col-md-6">
+																		<div class="check-upload-area mx-auto">
+																				<div class="form-group">
+																						<input type="text" class="form-control custom_input_border" placeholder="type in your Linkname">
+																						<a href="#" class="d-block mt-3" target="_blank">uploadcommander.de/<span>linkname</span></a>
+																				</div>
+																				<div class="clearfix my-5 my-lg-4 py-lg-3"></div>
+																				<div class="form-group px-lg-3 mb-4">
+																						<label class="checkbox-container">Show the profile picture on the post
+																								<input type="checkbox">
+																								<span class="checkmark"></span>
+																						</label>          
+																				</div>
+																				<div class="form-group px-lg-3 mb-4">
+																						<label class="checkbox-container">Show Profile-picture on the Page
+																								<input type="checkbox" checked>
+																								<span class="checkmark"></span>
+																						</label>          
+																				</div>
+																				<div class="form-group px-lg-3">
+																						<label class="checkbox-container">Show UC-logo on the Page
+																								<input type="checkbox" checked>
+																								<span class="checkmark"></span>
+																						</label>          
+																				</div>
+																				<!-- upload icon -->
+																			<div id="" class="upload-icon-div mt-5 pt-lg-5">
+																				<label class="upload-inner cursor-pointer mt-lg-3" for="imageUpload">
+																						<img src="resources/img/icons/Upload-from-computer.png" class="upload-icon" alt="upload icon">
+																						<span class="d-block upload-icon-text">Upload from Computer</span>
+																						<input type="file" id="imageUpload" multiple>
+																				</label>
+																		</div> 
+																		<div id="sCustomizeUpData" class="received-up-data my-3 custom-scroll-bar h-80px-oy"></div>
+																		</div> 																			            
+																</div>              
+														</div>         
+												</div>
+											<!-- Social collection tab -->
+												<div id="social-collection" class="tab-pane fade" role="tabpanel" aria-labelledby="social-collection-tab">
+													<div class="row justify-content-center">
+															<div class="col-xl-6 col-lg-12 col-md-6">
+																	<form class="user-inputs mb-5 pb-5 pb-xl-0 mb-xl-0">
+																				<div class="form-group">
+																						<div class="form-group px-lg-4 px-xl-5 mb-4 pb-3">
+																								<select class="form-control select-custom input-common">
+																										<option selected>Twitter</option>
+																										<option value="1">Facebook</option>
+																										<option value="2">Instagram</option>
+																										<option value="3">Youtube</option>
+																								</select>
+																						</div>
+																				</div>
+																				<div class="form-group px-lg-3 px-xl-5 mb-5">
+																						<label class="checkbox-container">Show Icon on the Button
+																								<input id="socialShowHide" type="checkbox" checked>
+																								<span class="checkmark"></span>
+																						</label>          
+																				</div>
+																				<div class="form-group mb-4 px-xl-4">
+																								<input type="text" class="input-common" placeholder="Your Twitter Username">
+																						</label>          
+																				</div>
+																				<div class="form-group mb-4 px-xl-4">
+																						<input type="text" class="input-common" placeholder="Title of the Button">
+																				</div>
+																				<hr class="gap-line d-block mx-auto mt-3"/>
+																				<button type="submit" class="add-link btn-50-150 btn-skyblue-c mx-auto d-block mt-5 cursor-pointer">Add Link</button>
+																		</form>
+																</div>
+																<div class="col-xl-6 col-lg-12 col-md-6 px-lg-1 py-2 bg-gray b-r-5">
+																		<ul id="socialTabList" class="social-tab-group custom-scroll-bar">
+																				<li class="social-icon-checkbox alert alert-dismissible fade show position-relative" role="alert">
+																						<div  class="drag-icon cursor-pointer transform-top-to-center position-absolute">
+																								<img src="resources/img/icons/drag icon.png" alt="drag icon">
+																						</div>
+																						<div class="s-icon-inner mx-2 d-flex align-items-center">
+																							<label class="checkbox-container">
+																									<input id="instagramMark" type="checkbox" checked>
+																									<span class="checkmark"></span>
+																							</label>
+																							<div class="s-icon-content mx-auto text-center">
+																									<p>Instagram</p>
+																									<a href="#" class="font-extra-small">https://www.Instagram.com/instausername</a>
+																							</div>
+																						</div>
+																						<button type="button" class="close text-danger position-absolute transform-top-to-center" data-dismiss="alert" aria-label="Close">
+																								<span aria-hidden="true">&times;</span>
+																						</button>
+																				</li>
+																				<li class="social-icon-checkbox alert alert-dismissible fade show position-relative" role="alert">
+																						<div class="drag-icon cursor-pointer transform-top-to-center position-absolute">
+																								<img src="resources/img/icons/drag icon.png" alt="drag icon">
+																						</div>
+																						<div class="s-icon-inner mx-2 d-flex align-items-center">
+																							<label class="checkbox-container">
+																									<input id="facebookMark" type="checkbox" checked>
+																									<span class="checkmark"></span>
+																							</label>
+																							<div class="s-icon-content mx-auto text-center">
+																									<p>Facebook</p>
+																									<a href="#" class="font-extra-small">https://www.facebook.com/fbusername</a>
+																							</div>
+																						</div>
+																						<button type="button" class="close text-danger position-absolute transform-top-to-center" data-dismiss="alert" aria-label="Close">
+																								<span aria-hidden="true">&times;</span>
+																						</button>
+																				</li>
+																				<li class="social-icon-checkbox alert alert-dismissible fade show position-relative" role="alert">
+																						<div class="drag-icon cursor-pointer transform-top-to-center position-absolute">
+																								<img src="resources/img/icons/drag icon.png" alt="drag icon">
+																						</div>
+																						<div class="s-icon-inner mx-2 d-flex align-items-center">
+																							<label class="checkbox-container">
+																									<input id="youtubeMark" type="checkbox">
+																									<span class="checkmark"></span>
+																							</label>
+																							<div class="s-icon-content mx-auto text-center">
+																									<p>Youtube</p>
+																									<a href="#" class="font-extra-small">https://www.youtube.com/chanelname</a>
+																							</div>
+																						</div>																						
+																						<button type="button" class="close text-danger position-absolute transform-top-to-center" data-dismiss="alert" aria-label="Close">
+																								<span aria-hidden="true">&times;</span>
+																						</button>
+																				</li>
+																			</ul>
+																</div>
+														</div>           
+												</div>
+												<!--  s-curve tab -->
+												<div id="social-statistics" class="tab-pane fade" role="tabpanel" aria-labelledby="social-statistics-tab">
+														<div class="ml-xl-5">
+																<div id="socialCurve" class="social-curve p-3 b-r-8 bg-light position-relative">
+																		<select id="socialUpdateChart"  class="select-custom b-r-8 position-absolute">
+																				<option id="monthlyS" value="monthly" selected>Monthly</option>
+																				<option id="yearlyS" value="yearly">Yearly</option>
+																				<option id="weeklyS" value="weekly" >Weekly</option>
+																				<option id="dailyS" value="daily">Daily</option>
+																		</select>
+																		<div class="social-curve-title pb-3">Total views on your page</div>
+																		<!-- S-curve here -->
+																		<canvas id="myChart"></canvas>
+																		<div class="clearfix"></div>
+																		<div class="customer-link form-group mx-auto my-3 position-relative">
+																			<input type="text" class="customer-link-input custom_input_border b-r-5" value="http://uc.schmidt-tudl-it.de/He7D82B" id="yourPageLink">
+																			<button class="copy-icon position-absolute cursor-pointer bg-transparent" onclick="copyPageLink()" onmouseout="outPageLink()">
+																					<img src="resources/img/icons/copy.png" alt="copy link">
+																			</button>
+																			<span class="tooltiptext b-r-5 dismiss-w-h" id="yourPageText"></span>
+																	</div>
+																		<!-- social click viwes rate information -->
+																		<div class="d-flex justify-content-center viwes-clicks-rate text-center mt-5 mx-0 mx-md-4">
+																				<div class="s-information b-r-8 d-flex flex-column align-items-center justify-content-center">
+																						<p class="titles">Total Viwes</p>
+																						<span class="d-block numbers">467</span>
+																				</div>
+																				<div class="s-information b-r-8 mx-3 mx-md-5 d-flex flex-column align-items-center justify-content-center">
+																						<p class="titles">Click on your Links</p>
+																						<span class="d-block numbers">106</span>
+																				</div>
+																				<div class="s-information b-r-8 d-flex flex-column align-items-center justify-content-center">
+																						<p class="titles">Click Rate</p>
+																						<span class="d-block numbers">34%</span>
+																				</div>
+																		</div>
+																</div>
+																<!-- Social media date wise click information  -->
+																<div class="date-wise-click d-flex justify-content-center text-center mt-5 mx-0 mx-md-4">
+																		<div class="d-information b-r-8 p-2 d-flex flex-column align-items-center justify-content-center">
+																				<span class="titles">Clicks since <span>21.10.19</span></span>
+																				<span class="social d-flex py-2"><i class="fa fa-instagram" aria-hidden="true"></i><span class="pl-2 pl-sm-3 text">Instagram</span></span>
+																				<span class="numbers">234</span>
+																		</div>
+																		<div class="d-information b-r-8 p-2 mx-3 mx-md-5 d-flex flex-column align-items-center justify-content-center">
+																				<span class="titles">Clicks since <span>05.08.19</span></span>
+																				<span class="social d-flex py-2"><i class="fa fa-facebook-square" aria-hidden="true"></i><span class="pl-2 pl-sm-3 text">Facebook</span></span>
+																				<span class="numbers">233</span>
+																		</div>
+																		<div class="d-information b-r-8 p-2 d-flex flex-column align-items-center justify-content-center">
+																				<span class="titles">Clicks since <span>16.08.18</span></span>
+																				<span class="social d-flex py-2"><i class="fa fa-youtube-play" aria-hidden="true"></i><span class="pl-2 pl-sm-3 text">Youtube</span></span>
+																				<span class="numbers">234</span>
+																		</div>
+																</div>
+														</div>
+												</div>
+										</div>
+								</div>
+								<!-- mobile frame start -->
+								<div class="col-lg-4 col-md-6 mt-lg-2 pt-lg-5 mt-lg-0 mb-3 pb-5">
+										<div class="mobile-format mx-auto mx-lg-0 pt-5 pt-lg-0 ml-lg-auto position-relative fade-in-custom-animation">
+											<div id="mobileFrame" class="mobile-container position-relative" style="background:#E8D420;">
+												<div id="mobileFrameArea" class="mobile-content position-absolute text-center">
+														<a href="#" class="mobile-profile mx-auto ">
+																<img src="resources/img/small-profile-pic.png" class="mx-auto" alt="mobile profile">
+														</a>
+														<a href="#" class="link-name my-2">@Linkname</a>
+														<!-- reciver -->
+														<div class="social_icons_container">
+															<a href="#" class="social-btn b-r-10 instagram transition-common mx-auto position-relative">
+																	<i class="fa fa-instagram" aria-hidden="true"></i>
+																	<span>Instagram</span>						
+															</a>
+															<a href="#" class="social-btn b-r-10 facebook transition-common mx-auto position-relative">
+																<i class="fa fa-facebook-square" aria-hidden="true"></i>
+																<span>Facebook</span>	
+															</a>
+															<a href="#" class="social-btn b-r-10 youtube transition-common mx-auto position-relative" style="display:none;">
+																<i class="fa fa-youtube-play" aria-hidden="true"></i>
+																<span>Youtube</span>	
+															</a>
+															<a href="#" class="social-btn b-r-10 instagram transition-common mx-auto position-relative">
+																<i class="fa fa-instagram" aria-hidden="true"></i>
+																	<span>Instagram</span>				
+															</a>
+															<a href="#" class="social-btn b-r-10 facebook transition-common mx-auto position-relative">
+																<i class="fa fa-facebook-square" aria-hidden="true"></i>
+																<span>Facebook</span>	
+															</a>
+															<a href="#" class="social-btn b-r-10 youtube transition-common mx-auto position-relative" style="display:none;">
+																<i class="fa fa-youtube-play" aria-hidden="true"></i>
+																<span>Youtube</span>	
+															</a>
+															<a href="#" class="social-btn b-r-10 instagram transition-common mx-auto position-relative">
+																<i class="fa fa-instagram" aria-hidden="true"></i>
+																<span>Instagram</span>
+															</a>
+															<a href="#" class="social-btn b-r-10 facebook transition-common mx-auto position-relative">
+																<i class="fa fa-facebook-square" aria-hidden="true"></i>
+																<span>Facebook</span>
+															</a>
+															<a href="#" class="social-btn b-r-10 youtube transition-common mx-auto position-relative" style="display:none;">
+																<i class="fa fa-youtube-play" aria-hidden="true"></i>
+																<span>Youtube</span>	
+															</a>
+														</div>														
+														<a href="#" class="mini-logo mt-5 mx-auto">
+																<img src="resources/img/logo.png" class="mx-auto img-fluid" alt="Logo">
+														</a>
+												</div>
+											</div>												
+												<!-- switch box -->
+												<div id="switchRounded" class="switch-rounded dismiss-w-h text-center mt-4 d-flex justify-content-center position-absolute transform-left-to-center">
+														<input id="switchBtn" type="checkbox" checked="" class="switch_box"> 
+														<span class="pl-3">Rounded buttons</span>  
+												</div>
+										</div>      
+								</div>
+								<!-- end of mobile frame -->
+							</div>        
+						</div>
+					</div>
+					</div>
+					<!--=== End of social customize ===-->							
+			</main>
+			<!--=== End of Main Items ===-->
+	</div>
+
+
+<!--=== End of  Body Item ===-->
+ <!--=== social customize ===-->
+
+
+ <!-- Java script started -->
+ <script src="vendors/js/jquery-3.3.1.min.js"></script>
+ <!-- popper js -->
+ <script src="vendors/js/popper.min.js"></script>
+ <!-- bootstrap js -->
+ <script src="vendors/js/bootstrap.min.js"></script>
+ <!-- Chart js -->
+	<script src="vendors/js/chart.js"></script>
+	<!-- jQuery UI js -->
+	<script src="vendors/js/jquery-ui.min.js"></script>
+	<!-- jQuery UI js -->
+	<script src="vendors/js/perfect-scrollbar.js"></script>
+ <!-- jquery preloader js for main content -->
+ <script src="vendors/js/jquery.preloadinator.min.js"></script>
+ <!-- Full Screen Window Plugin -->
+ <script src="vendors/js/jquery.fullscreen-min.js"></script>
+ <!-- Main/custom js -->
+	<script src="resources/js/main.js"></script>
+</body>
+</html>

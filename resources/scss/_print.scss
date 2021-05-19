@@ -1,0 +1,45 @@
+/***************************/
+/*********Print Media*******/
+/***************************/
+@media only print{
+ #headerMenu{  
+  background:white;
+  .h-icons, .h-icons2{
+   display:none;
+  }
+  .site-logo{
+   margin-left:300px;
+   margin-bottom:50px;
+  }
+  .profile-photoss{
+   display:none;
+   opacity:0;   
+  }
+ }
+ #sidebarNav{
+  display:none;
+ }
+ #bodyItem{
+  .main_item{
+   &.main_item-active{
+    width: calc(100% - 0px);
+    margin-left: 50px;
+   }
+   #socialCustomize{
+    #printStatistics{
+     display:none;
+    }
+    #build-tab{
+     display:none;
+    }
+    #myChart{
+     width:100% !important;
+     height:auto !important;
+    }
+    #social-statistics{
+     margin-bottom:250px;
+    }
+   }   
+  }  
+ }
+}

@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Auto Comment</title>
+ <!-- google fonts -->
+ <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap" rel="stylesheet">
+ <!-- fontawesome -->
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+ <!-- bootstrap css -->
+ <link rel="stylesheet" href="vendors/css/bootstrap.min.css">
+ <!-- style css -->
+ <link rel="stylesheet" href="./resources/css/main.css">
+</head>
+<body>
+   <!--=== Header Menu ===-->
+   <header id="headerMenu" class="px-3">
+    <div class="row h-82 align-items-center justify-content-center justify-content-lg-between">
+      <div class="col-lg-6 col-xl-6 d-flex order-2 order-lg-1 py-3 py-lg-0">
+        <a href="#" id="menuBar" class="h-icons menu_bar_icon">
+          <span class="hambarger"></span>
+        </a>
+        <button class="h-icons full-screen-wrap bg-transparent" onclick="$(document).toggleFullScreen()">
+          <span class="top-left fs-bar"></span>
+          <span class="top-left-horiz fs-bar"></span>
+          <span class="top-right fs-bar"></span>
+          <span class="top-right-horiz fs-bar"></span>
+          <span class="bottom-left fs-bar"></span>
+          <span class="bottom-left-horiz fs-bar"></span>
+          <span class="bottom-right fs-bar"></span>
+          <span class="bottom-right-horiz fs-bar"></span>
+        </button>
+        <a href="#" id="settings-icon" class="h-icons settings_icon d-flex">
+          <div><img src="resources/img/icons/settings.png" alt="settings"></div>
+          <span class="pl-2">Settings</span>
+        </a>
+        <a href="#" class="site-logo">
+          <img src="resources/img/Logo-UC.png" alt="Site logo">
+        </a>
+      </div>
+      <div class="col-lg-6 col-xl-6 d-flex order-1 order-lg-2 py-3 py-lg-0 align-items-center justify-content-between justify-content-xl-end text-center">
+        <a href="#" class="h-icons2 h-task">
+          <img src="resources/img/icons/paste.png" alt="My tasks">
+          <span class="d-block text-nowrap">My Tasks</span>
+        </a>
+        <a href="#" class="h-icons2 h-shop">
+          <img src="resources/img/icons/bag.png" alt="My tasks">
+          <span class="d-block">Shop</span>
+        </a>
+        <a href="support-tickets.html" class="h-icons2 h-support">
+          <img src="resources/img/icons/headphone.png" alt="support">
+          <span class="d-block">Support</span>
+        </a>
+        <a href="new-support-ticket.html" class="h-icons2 h-helpdesk">
+          <img src="resources/img/icons/help.png" alt="helpDesk">
+          <span class="d-block">HelpDesk</span>
+        </a>         
+        <a href="#" class="h-icons2 h-history">
+          <img src="resources/img/icons/clock.png" alt="History">
+          <span class="d-block">History</span>
+        </a>                
+        <div class="profile-photoss pl-xl-5 pl-lg-4 pr-xl-4 d-flex flex-column flex-sm-row align-items-center">
+          <span class="user-name pr-0 pr-sm-3 order-2 order-sm-1">Emely Guerrero</span>
+          <span class="position-relative d-block order-1 order-sm-2">
+            <a href="#" class="d-block profile_pic"><img src="resources/img/small-profile-pic.png" alt="profile picture"></a>
+            <a href="#" class="logout-icon position-absolute">
+              <img class="lgt_icons" src="resources/img/icons/logout.png" alt="Logout">
+            </a>
+         </span>         
+        </div>
+      </div>
+    </div>    
+  </header>
+  <!--===End of Header Menu ===-->
+  <!--=== Body Item  ===-->
+  <div id="bodyItem" class="body-item position-relative">
+    <!--=== Side bar ===-->
+    <nav id="sidebarNav" class="sidebar_nav nav-active">
+      <!-- Categories -->
+      <div id="navAccordion" class="transition-5">
+         <!-- Management -->
+         <div class="side_nav_item mb-3">
+          <div id="navHeadingOne">
+            <button class="item-header collapsed w-100 px-3 d-flex justify-content-between align-items-center cursor-pointer" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            
+                <div><img src="resources/img/icons/carret.png" class="carret-icon" alt="angle"></div>
+                <h5>Management</h5>
+                <div><img src="resources/img/icons/copy-2.png" alt="create"></div>
+            </button>
+          </div>      
+          <div id="collapseOne" class="collapse" aria-labelledby="navHeadingOne" data-parent="#navAccordion">
+            <ul class="itemss pl-4 pr-3">
+              <li><a href="#">Dashboard</a></li>
+              <li><a href="#">Workflow Management</a></li>
+              <li><a href="campaign-management.html">Campaign Management</a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- Content Create -->
+        <div class="side_nav_item mb-3">
+          <div id="navHeadingTwo">
+            <button class="item-header collapsed w-100 px-3 d-flex justify-content-between align-items-center cursor-pointer" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+            
+                <div><img src="resources/img/icons/carret.png" class="carret-icon" alt="angle"></div>
+                <h5>Content Create</h5>
+                <div><img src="resources/img/icons/copy-2.png" alt="create"></div>
+            </button>
+          </div>      
+          <div id="collapseTwo" class="collapse" aria-labelledby="navHeadingTwo" data-parent="#navAccordion">
+            <ul class="itemss pl-4 pr-3">
+              <li><a href="content-create-panel.html">Content Create Panel</a></li>
+              <li><a href="#">PhotoEditor</a></li>
+              <li><a href="media-center.html">MediaCenter</a></li>
+              <li><a href="#">Social-Media Templates</a></li>
+              <li><a href="#">E-Mail Templates</a></li><li><a href="caption-template.html">Caption Template</a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- Social Marketing -->
+        <div class="side_nav_item mb-3">
+          <div id="navHeadingThree">
+            <button class="item-header collapsed w-100 px-3 d-flex justify-content-between align-items-center cursor-pointer" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+            
+                <div><img src="resources/img/icons/carret.png" class="carret-icon" alt="angle"></div>
+                <h5>Social Marketing</h5>
+                <div><img src="resources/img/icons/social marketing.png" alt="social marketing"></div>
+            </button>
+          </div>      
+          <div id="collapseThree" class="collapse" aria-labelledby="navHeadingThree" data-parent="#navAccordion">
+            <ul class="itemss pl-4 pr-3">
+              <li><a href="#">Content Library</a></li>
+              <li><a href="#">Task Management</a></li>
+              <li><a href="social-customize.html">Social-Collection</a></li>
+              <li><a href="auto-like.html">Auto-Like</a></li>
+              <li><a href="#">Auto-Comment</a></li>
+              <li><a href="#">Auto-DirectMessages</a></li>
+              <li><a href="auto-follow-unfollow.html">Auto Flow Unflow / Follow Accept</a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- Ads Marketing -->
+        <div class="side_nav_item mb-3">
+          <div id="navHeadingFour">
+            <button class="item-header collapsed w-100 px-3 d-flex justify-content-between align-items-center cursor-pointer" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+            
+              <div><img src="resources/img/icons/carret.png" class="carret-icon" alt="angle"></div>
+              <h5>Ads Marketing</h5>
+              <div><img src="resources/img/icons/ads.png" alt="Ads"></div>
+            </button>
+          </div>      
+          <div id="collapseFour" class="collapse" aria-labelledby="navHeadingFour" data-parent="#navAccordion">
+            <ul class="itemss pl-4 pr-3">
+              
+              <li><a href="#">Google Ads</a></li>
+              <li><a href="#">Facebook Ads</a></li>
+              <li><a href="#">Linkedin Ads</a></li>
+              <li><a href="#">Tiwtter Ads</a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- Influencer Marketing -->
+        <div class="side_nav_item mb-3">
+          <div id="navHeadingFive">
+            <button class="item-header collapsed w-100 px-3 d-flex justify-content-between align-items-center cursor-pointer" data-toggle="collapse" data-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+            
+              <div><img src="resources/img/icons/carret.png" class="carret-icon" alt="angle"></div>
+              <h5>Influencer Marketing</h5>
+              <div><img src="resources/img/icons/marketing.png" alt="Influencer Marketing"></div>
+            </button>
+          </div>      
+          <div id="collapseFive" class="collapse" aria-labelledby="navHeadingFive" data-parent="#navAccordion">
+            <ul class="itemss pl-4 pr-3">
+              <li><a href="#">Marketplace</a></li>
+              <li><a href="#">Pitchdeck</a></li>
+              <li><a href="#">My Tendors (Company only)</a></li>
+              <li><a href="#">My Profile (Influencers only)</a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- Mail Marketing -->
+        <div class="side_nav_item mb-3">
+          <div id="navHeadingSix">
+            <button class="item-header collapsed w-100 px-3 d-flex justify-content-between align-items-center cursor-pointer" data-toggle="collapse" data-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
+            
+              <div><img src="resources/img/icons/carret.png" class="carret-icon" alt="angle"></div>
+              <h5>Mail Marketing</h5>
+              <div><img src="resources/img/icons/mail-marketing.png" alt="Mail-Marketing"></div>
+            </button>
+          </div>      
+          <div id="collapseSix" class="collapse" aria-labelledby="navHeadingSix" data-parent="#navAccordion">
+            <ul class="itemss pl-4 pr-3">
+              <li><a href="#">Task Management</a></li>
+              <li><a href="#">Address Book / Directory</a></li>
+              <li><a href="#">Content Library</a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- Interactions -->
+        <div class="side_nav_item mb-3">
+          <div id="navHeadingSeven">
+            <button class="item-header collapsed w-100 px-3 d-flex justify-content-between align-items-center cursor-pointer" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="true" aria-controls="collapseSeven">
+            
+              <div><img src="resources/img/icons/carret.png" class="carret-icon" alt="angle"></div>
+              <h5>Interactions</h5>
+              <div><img src="resources/img/icons/ineractions.png" alt="Interactions"></div>
+            </button>
+          </div>      
+          <div id="collapseSeven" class="collapse" aria-labelledby="navHeadingSeven" data-parent="#navAccordion">
+            <ul class="itemss pl-4 pr-3">
+              <li><a href="#">Social Inbox</a></li>
+              <li><a href="#">Messenger Inbox
+                Whatsapp,Skype,Telegram</a></li>
+              <li><a href="#">E-Mail Inbox</a></li>
+              <li><a href="#">Ticket Inbox</a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- Analytics -->
+        <div class="side_nav_item mb-3">
+          <div id="navHeadingEight">
+            <button class="item-header collapsed w-100 px-3 d-flex justify-content-between align-items-center cursor-pointer" data-toggle="collapse" data-target="#collapseEight" aria-expanded="true" aria-controls="collapseEight">
+            
+              <div><img src="resources/img/icons/carret.png" class="carret-icon" alt="angle"></div>
+              <h5>Analytics</h5>
+              <div><img src="resources/img/icons/ineractions.png" alt="Interactions"></div>
+            </button>
+          </div>      
+          <div id="collapseEight" class="collapse" aria-labelledby="navHeadingEight" data-parent="#navAccordion">
+            <ul class="itemss pl-4 pr-3">
+              <li><a href="#">Ads Statistics</a></li>
+              <li><a href="index.html">Social Statistics</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- Settings -->
+      <div id="settingsList" class="settings-list transition-5 opacity-h-0">
+        <a href="#" id="settingBack" class="setting-back d-block"><i class="fa fa-angle-left pr-2" aria-hidden="true"></i>Back</a>
+        <ul class="pl-0">
+          <li><a href="#">Channels</a></li>
+          <li><a href="#">Profiles</a></li>
+          <li><a href="contract-details.html">Contract Details</a></li>
+          <li><a href="affliate-setting.html">Affiliate Settings</a></li>
+          <li><a href="team-user-management.html">user management</a></li>
+          <li><a href="#">Security</a></li>
+          <li><a href="#">Guidelines</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!--=== End of Side bar ===-->
+    <!--=== Main Items ===-->
+    <main id="mainItem" class="main_item p-2 main_item-active">
+      <div class="body-header-content mb-3 p-3 pl-xl-5">
+				<div class="d-flex">
+						<h4>Auto Comment</h4>
+						<div id="iIcon" class="info-icons pt-1 pl-3 cursor-pointer">
+								<img src="resources/img/icons/info-icon.png" alt="info">
+						</div>
+				</div>
+				<p class="bheadertext pl-lg-4 display-none">An interesting implication of the 2007 study concerns the use of hand sanitizers by observant Muslims. Alcohol is forbidden (haram) to Muslims. Since the alcohol in hand sanitizer is absorbed into the blood, does that make these hand sanitizers haram?</p>
+			</div>
+      <!--==*******All Frame setup on this here*********== -->
+       <!--=== Auto Comment ===-->
+      <div id="autoComment" class="content-container afulc_container p-0 b-r-8">
+        <!-- preloader container -->
+        <div class="preloader-js">
+          <div class="preloader-area d-flex justify-content-center mt-5 pt-5">
+            <div class="preloader_img mt-5 pt-5">
+              <img src="./resources/img/icons/loading.png" alt="loading image">
+            </div> 
+          </div>                   
+        </div>
+        <!--x- End of preloader container -x-->
+       <div class="autoComment-inner afulc_inner d-flex">
+         <!-- Form area left side-->
+         <div class="afulc_leftarea active p-4 p-lg-5">
+          <form class="overflow-hidden" action="" method="">
+            <div class="form-group d-flex align-items-center">
+             <h5 class="afu_1st_title">Select Acount</h5>
+             <select class="afu-slct select-custom b-r-5 form-control ml-4">
+               <option selected>Twitter-@acountname</option>
+               <option value="facebook">Facebook</option>
+               <option value="instagram">Instagram</option>
+               <option value="youtube">Youtube</option>
+               <option value="twitter">Twitter</option>
+             </select>            
+            </div>  
+            <label class="swich-checkbox">
+             <input type="checkbox" class="input-swich dismiss-w-h" checked/>
+             <span class="s_iconarea d-flex">
+               <span class="check_swichicon"></span>
+               <span class="afu_2nd_title pl-3">Auto-Follow</span>
+             </span>              
+           </label> 
+           <!-- Search & Tags -->
+           <div class="define_search_rule">
+             <h5 class="afu_1st_title mt-5 mb-4">Define Seach Rule</h5>  
+             <div class="d-sm-flex">
+               <div class="df_radio_boxes mr-3 mb-4 mb-sm-0 mr-lg-5">
+                 <label class="round-radiobox d-block mb-3">
+                   <input type="radio" class="input-radio dismiss-w-h" name="ds-rule" checked/>
+                   <span class="radio_iconarea d-flex">
+                     <span class="check_radioicon"></span>
+                     <span class="afu_2nd_title pl-3">#Hashtags</span>
+                   </span>              
+                 </label>
+                 <label class="round-radiobox d-block mb-3">
+                   <input type="radio" class="input-radio dismiss-w-h" name="ds-rule"/>
+                   <span class="radio_iconarea d-flex">
+                     <span class="check_radioicon"></span>
+                     <span class="afu_2nd_title pl-3">Location</span>
+                   </span>              
+                 </label>
+                 <label class="round-radiobox d-block">
+                   <input type="radio" class="input-radio dismiss-w-h" name="ds-rule"/>
+                   <span class="radio_iconarea d-flex">
+                     <span class="check_radioicon"></span>
+                     <span class="afu_2nd_title pl-3">User</span>
+                   </span>              
+                 </label>
+               </div>
+               <!-- Define Search Rule -->
+               <div class="df_search_tags ml-xl-5">
+                 <div class="form-group">
+                   <input type="text" class="df_search form-control" placeholder="Search here">
+                 </div>
+                 <div class="tags-area">
+                   <span class="tag-item alert alert-dismissible fade show">
+                     <span class="tag-content"><span class="t_hash">#</span>Holidays</span>
+                     <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                       <span aria-hidden="true">×</span>
+                    </button>
+                   </span>
+                   <span class="tag-item alert alert-dismissible fade show">
+                     <span class="tag-content"><span class="t_hash">#</span>French2020</span>
+                     <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                       <span aria-hidden="true">×</span>
+                    </button>
+                   </span>
+                 </div>
+               </div>               
+             </div>
+           </div>
+            <!-- Add comment -->
+            <div class="add_comment_container">
+              <h5 class="afu_1st_title mt-5 mb-4">Add comment</h5> 
+              <div class="add_comment_inner">
+                <div class="add_cM_area mb-3">
+                  <textarea class="add_c_input custom-scroll-bar" maxlength="2000" name="" id="" placeholder="Type a possible comment"></textarea>
+                  <div class="add_c_footer d-flex justify-content-end pt-2">
+                    <div class="add_c_submit">
+                      <button type="button" class="add_c_btn cursor-pointer mr-2">Add Comment</button>
+                     <a href="#"><img class="add_c_imoji" src="./resources/img/icons/smile.png" alt="smile"></a> 
+                    </div>
+                  </div>
+                </div>
+                <div class="tags-area">
+                  <span class="tag-item alert alert-dismissible fade show">
+                    <span class="tag-content">Well done!!!</span>
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                      <span aria-hidden="true">×</span>
+                    </button>
+                  </span>
+                  <span class="tag-item alert alert-dismissible fade show">
+                    <span class="tag-content">Congrats with Job</span>
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                      <span aria-hidden="true">×</span>
+                    </button>
+                  </span>
+                  <span class="tag-item alert alert-dismissible fade show">
+                    <span class="tag-content">Amazing Project!</span>
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                      <span aria-hidden="true">×</span>
+                    </button>
+                  </span>
+                  <span class="tag-item alert alert-dismissible fade show">
+                    <span class="tag-content">Very funny :)</span>
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                      <span aria-hidden="true">×</span>
+                    </button>
+                  </span>                 
+                  <span class="tag-item alert alert-dismissible fade show">
+                    <span class="tag-content">I’m interested in your works, i will contact you!</span>
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                      <span aria-hidden="true">×</span>
+                    </button>
+                  </span>
+                </div>
+              </div>  
+            </div>
+           <!-- Settings -->
+           <div class="afu_settings mt-5">
+             <h5 class="afu_1st_title mb-4">Settings</h5>
+             <div class="afu_settings_area">
+               <div class="afus_row d-md-flex mb-4">
+                 <select class="afus-slct2 select-custom input-common form-control">
+                   <option selected>Speed</option>
+                   <option value="">One</option>
+                   <option value="">Two</option>
+                   <option value="">Three</option>
+                   <option value="">Four</option>
+                 </select>
+                 <div></div>
+               </div>              
+               <div class="form-group d-sm-flex mb-4">
+                 <label class="checkbox-container mb-4 mb-sm-0 mr-0 mr-sm-3 mr-md-5">Pause Activity Everyday
+                     <input type="checkbox" checked>
+                     <span class="checkmark"></span>
+                 </label>
+                 <label class="checkbox-container">Pause Activity Everyday
+                  <input type="checkbox" checked>
+                  <span class="checkmark"></span>
+                </label>           
+               </div>
+               <div class="afus_row d-flex justify-content-start align-items-center mb-4">
+                 <select class="afus-slct2 select-custom select-small input-common form-control">
+                   <option selected>Form</option>
+                   <option value="">One</option>
+                   <option value="">Two</option>
+                   <option value="">Three</option>
+                 </select> 
+                 <div class="afus_divider mx-1"></div>
+                 <select class="afus-slct2 select-custom select-small input-common form-control">
+                   <option selected>Until</option>
+                   <option value="">One</option>
+                   <option value="">Two</option>
+                   <option value="">Three</option>
+                 </select>               
+               </div>              
+             </div>   
+           </div>
+           <div class="afu_submit_area mt-5">
+             <button type="submit" class="afu_submit btn-60-200 btn-green-c display-block ml-auto">Save Changes</button>
+           </div>
+          </form>  
+         </div>   
+          <!-- End of form Area -->
+        <!-- contents right side-->
+         <div class="afulc_rightarea position-relative pl-4 p-4 b-r-8">                     
+          <button id="afulcCollapseBtn" class="afulc_collapse_btn position-absolute display-none cursor-pointer" type="button">
+            <img src="./resources/img/icons/right_arrow_blue.png" alt="right arrow">
+          </button>
+          <div class="afulc_content_container mt-5">
+            <div class="afulc_content_inner">
+              <!-- select & left arrow -->
+              <div class="afulc_le_sec mb-2 d-flex">
+                <div class="afulc_left_arrow">
+                 <button id="afulcExpandBtn" class="afulc_expand_btn cursor-pointer mr-3" type="button">
+                   <img src="./resources/img/icons/left_arrow_blue.png" alt="left arrow">
+                 </button>
+                </div>            
+                <form action="" class="afulc_search_area form-group d-flex">
+                  <input type="text" class="afulc_search form-control input-common" placeholder="Search Here..."/>
+                  <button type="submit" class="ac_search_btn">
+                    <img src="./resources/img/icons/search icon.png" alt="Search"/>
+                  </button>
+                </form>
+              </div>
+              <!-- Post Container -->
+              <div class="row afulc_post_area pt-4 pt-sm-0">
+                <!-- Facebook -->
+                <div class="col-lg-6 mb-4 text-center b-r-5 overflow-hidden d-flex justify-content-center">
+                  <div class="afulc_post facebook_post">
+                    <!--social log right top coner -->
+                    <span class="social_site_logo">
+                      <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                    </span>
+                    <div class="afulc_post_header py-2">                      
+                     <div class="fb_profile d-flex px-3">
+                      <a href="#" class="fb_pro_img">
+                        <img src="./resources/img/social-post/fb_page.png" alt="profile">
+                      </a>
+                      <div class="fb_name_area text-left">
+                        <a class="fb_name d-inline-block" href="#">DER SPIEGEL <img class="pb-1" src="./resources/img/icons/verified.jpg" alt=""></a>
+                        <div class="fb_post_time">
+                          <span>4 Std.</span>
+                          <a href="#">
+                            <i class="fa fa-globe" aria-hidden="true"></i>
+                          </a>
+                        </div>
+                      </div>
+                     </div>
+                      <div class="fb_post_text text-left px-3">
+                        <p class="mb-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+                      </div>
+                    </div>
+                    <div class="s_post_img">
+                      <img class="w-100" src="./resources/img/social-post/post_img.jpg" alt="post picture">
+                    </div>
+                    <div class="s_post_laud_area">
+                      <div class="s_post_laud">
+                        <p class="s_p_text text-left mb-0">Jason, Well done! It's really a nice opportunity for us.!!</p>
+                        <div class="s_pl_time text-right">02.06.2020 15:53pm</div>
+                      </div>
+                    </div>
+                    <div class="afulc_post_footer s_post_footer p-0 d-flex">
+                      <a href="#" class="view_posting d-block px-3 py-3">
+                        <img class="post_f_icon mr-1" src="./resources/img/icons/view_post.png" alt="view post">
+                        <span>View Posting</span>
+                      </a>
+                      <a href="#" class="del_unlike_post d-block px-3 py-3">
+                        <img class="post_f_icon mr-1" src="./resources/img/icons/Trash icon.png" alt="Trash">
+                        <span>Delete</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>                
+                <!-- Twitter -->
+                <div class="col-lg-6 mb-4 text-center b-r-5 overflow-hidden d-flex justify-content-center">
+                  <div class="afulc_post twitter_post">
+                    <!--social log right top coner -->
+                    <span class="social_site_logo">
+                      <i class="fa fa-twitter" aria-hidden="true"></i>
+                    </span>
+                    <div class="afulc_post_header py-2">                      
+                     <div class="tw_profile d-flex px-3">
+                      <a href="#" class="tw_pro_img">
+                        <img src="./resources/img/social-post/twitter_page.jpg" alt="profile">
+                      </a>
+                      <div class="tw_name_area pr-3 text-left">
+                        <a href="#" class="tw_name d-inline-block" href="#">Holman Gao</a>
+                        <div class="clearfix"></div>
+                        <a href="#" class="tw_id d-inline-block">@golmansax</a>
+                      </div>
+                      <div class="tw_follow">
+                        <a href="#" class="tw_follow_link">
+                          <i class="fa fa-twitter" aria-hidden="true"></i>
+                          <span class="tw_f_text">Follow</span>
+                        </a>
+                      </div>                      
+                     </div>
+                     
+                      <div class="tw_post_text text-left px-3">
+                        <p class="mb-1 mt-2">Working on a website thumbnail API that steams thumbnails as they are requested. Try it out! <a href="#">thum.io</a></p>
+                        <div class="tw_post_time mb-2">2:16 PM - 15 Nov 2016</div>
+                        <div class="tw_share_cmnt_love">
+                          <a href="#" class="mr-3">
+                            <img src="./resources/img/icons/tw_share.jpg" alt="share">
+                            <span></span>
+                          </a>
+                          <a href="#" class="mr-3">
+                            <img src="./resources/img/icons/tw_comment.jpg" alt="comment">
+                            <span>1</span>
+                          </a>
+                          <a href="#" class="mr-3">
+                            <img src="./resources/img/icons/tw_love.jpg" alt="love">
+                            <span>2</span>
+                          </a>
+                        </div>
+                      </div>                      
+                    </div>
+                    <div class="s_post_laud_area">
+                      <div class="s_post_laud">
+                        <p class="s_p_text text-left mb-0">Jason, Well done! It's really a nice opportunity for us.!!</p>
+                        <div class="s_pl_time text-right">02.06.2020 15:53pm</div>
+                      </div>
+                    </div>
+                    <div class="afulc_post_footer s_post_footer p-0 d-flex">
+                      <a href="#" class="view_posting d-block px-3 py-3">
+                        <img class="post_f_icon mr-1" src="./resources/img/icons/view_post.png" alt="view post">
+                        <span>View Posting</span>
+                      </a>
+                      <a href="#" class="del_unlike_post d-block px-3 py-3">
+                        <img class="post_f_icon mr-1" src="./resources/img/icons/Trash icon.png" alt="Trash">
+                        <span>Delete</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <!-- Twitter -->
+                <div class="col-lg-6 mb-4 text-center b-r-5 overflow-hidden d-flex justify-content-center">
+                  <div class="afulc_post twitter_post">
+                    <!--social log right top coner -->
+                    <span class="social_site_logo">
+                      <i class="fa fa-twitter" aria-hidden="true"></i>
+                    </span>
+                    <div class="afulc_post_header py-2">                      
+                     <div class="tw_profile d-flex px-3">
+                      <a href="#" class="tw_pro_img">
+                        <img src="./resources/img/social-post/twitter_page.jpg" alt="profile">
+                      </a>
+                      <div class="tw_name_area pr-3 text-left">
+                        <a href="#" class="tw_name d-inline-block" href="#">Holman Gao</a>
+                        <div class="clearfix"></div>
+                        <a href="#" class="tw_id d-inline-block">@golmansax</a>
+                      </div>
+                      <div class="tw_follow">
+                        <a href="#" class="tw_follow_link">
+                          <i class="fa fa-twitter" aria-hidden="true"></i>
+                          <span class="tw_f_text">Follow</span>
+                        </a>
+                      </div>                      
+                     </div>
+                     
+                      <div class="tw_post_text text-left px-3">
+                        <p class="mb-1 mt-2">Working on a website thumbnail API that steams thumbnails as they are requested. Try it out! <a href="#">thum.io</a></p>
+                        <div class="tw_post_time mb-2">2:16 PM - 15 Nov 2016</div>
+                        <div class="tw_share_cmnt_love">
+                          <a href="#" class="mr-3">
+                            <img src="./resources/img/icons/tw_share.jpg" alt="share">
+                            <span></span>
+                          </a>
+                          <a href="#" class="mr-3">
+                            <img src="./resources/img/icons/tw_comment.jpg" alt="comment">
+                            <span>1</span>
+                          </a>
+                          <a href="#" class="mr-3">
+                            <img src="./resources/img/icons/tw_love.jpg" alt="love">
+                            <span>2</span>
+                          </a>
+                        </div>
+                      </div>                      
+                    </div>
+                    <div class="s_post_laud_area">
+                      <div class="s_post_laud">
+                        <p class="s_p_text text-left mb-0">Jason, Well done! It's really a nice opportunity for us.!!</p>
+                        <div class="s_pl_time text-right">02.06.2020 15:53pm</div>
+                      </div>
+                    </div>
+                    <div class="afulc_post_footer s_post_footer p-0 d-flex">
+                      <a href="#" class="view_posting d-block px-3 py-3">
+                        <img class="post_f_icon mr-1" src="./resources/img/icons/view_post.png" alt="view post">
+                        <span>View Posting</span>
+                      </a>
+                      <a href="#" class="del_unlike_post d-block px-3 py-3">
+                        <img class="post_f_icon mr-1" src="./resources/img/icons/Trash icon.png" alt="Trash">
+                        <span>Delete</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <!-- Instagram -->
+                <div class="col-lg-6 mb-4 text-center b-r-5 overflow-hidden d-flex justify-content-center">
+                  <div class="afulc_post instagram_post">
+                    <!--social log right top coner -->
+                    <span class="social_site_logo">
+                      <i class="fa fa-instagram" aria-hidden="true"></i>
+                    </span>
+                    <div class="afulc_post_header py-2">                      
+                     <div class="inst_profile d-flex px-3">
+                      <a href="#" class="inst_pro_img">
+                        <img src="./resources/img/social-post/instagram_page.jpg" alt="profile">
+                      </a>
+                      <div class="inst_name_area text-left align-self-center">
+                        <a class="inst_name d-inline-block" href="#">mclarenauto</a>
+                      </div>
+                     </div>
+                    </div>
+                    <div class="s_post_img">
+                      <img class="w-100" src="./resources/img/social-post/instagram_post.jpg" alt="post picture">
+                    </div>
+                    <div class="s_post_laud_area">
+                      <div class="s_post_laud">
+                        <p class="s_p_text text-left mb-0">Jason, Well done! It's really a nice opportunity for us.!!</p>
+                        <div class="s_pl_time text-right">02.06.2020 15:53pm</div>
+                      </div>
+                    </div>
+                    <div class="afulc_post_footer s_post_footer p-0 d-flex">
+                      <a href="#" class="view_posting d-block px-3 py-3">
+                        <img class="post_f_icon mr-1" src="./resources/img/icons/view_post.png" alt="view post">
+                        <span>View Posting</span>
+                      </a>
+                      <a href="#" class="del_unlike_post d-block px-3 py-3">
+                        <img class="post_f_icon mr-1" src="./resources/img/icons/Trash icon.png" alt="Trash">
+                        <span>Delete</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <!-- Instagram -->
+                <div class="col-lg-6 mb-4 text-center b-r-5 overflow-hidden d-flex justify-content-center">
+                  <div class="afulc_post instagram_post">
+                    <!--social log right top coner -->
+                    <span class="social_site_logo">
+                      <i class="fa fa-instagram" aria-hidden="true"></i>
+                    </span>
+                    <div class="afulc_post_header py-2">                      
+                     <div class="inst_profile d-flex px-3">
+                      <a href="#" class="inst_pro_img">
+                        <img src="./resources/img/social-post/instagram_page.jpg" alt="profile">
+                      </a>
+                      <div class="inst_name_area text-left align-self-center">
+                        <a class="inst_name d-inline-block" href="#">mclarenauto</a>
+                      </div>
+                     </div>
+                    </div>
+                    <div class="s_post_img">
+                      <img class="w-100" src="./resources/img/social-post/instagram_post.jpg" alt="post picture">
+                    </div>
+                    <div class="s_post_laud_area">
+                      <div class="s_post_laud">
+                        <p class="s_p_text text-left mb-0">Jason, Well done! It's really a nice opportunity for us.!!</p>
+                        <div class="s_pl_time text-right">02.06.2020 15:53pm</div>
+                      </div>
+                    </div>
+                    <div class="afulc_post_footer s_post_footer p-0 d-flex">
+                      <a href="#" class="view_posting d-block px-3 py-3">
+                        <img class="post_f_icon mr-1" src="./resources/img/icons/view_post.png" alt="view post">
+                        <span>View Posting</span>
+                      </a>
+                      <a href="#" class="del_unlike_post d-block px-3 py-3">
+                        <img class="post_f_icon mr-1" src="./resources/img/icons/Trash icon.png" alt="Trash">
+                        <span>Delete</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <!-- Facebook -->
+                <div class="col-lg-6 mb-4 text-center b-r-5 overflow-hidden d-flex justify-content-center">
+                  <div class="afulc_post facebook_post">
+                    <!--social log right top coner -->
+                    <span class="social_site_logo">
+                      <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                    </span>
+                    <div class="afulc_post_header py-2">                      
+                     <div class="fb_profile d-flex px-3">
+                      <a href="#" class="fb_pro_img">
+                        <img src="./resources/img/social-post/fb_page.png" alt="profile">
+                      </a>
+                      <div class="fb_name_area text-left">
+                        <a class="fb_name d-inline-block" href="#">DER SPIEGEL <img class="pb-1" src="./resources/img/icons/verified.jpg" alt=""></a>
+                        <div class="fb_post_time">
+                          <span>4 Std.</span>
+                          <a href="#">
+                            <i class="fa fa-globe" aria-hidden="true"></i>
+                          </a>
+                        </div>
+                      </div>
+                     </div>
+                      <div class="fb_post_text text-left px-3">
+                        <p class="mb-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                      </div>
+                    </div>
+                    <div class="s_post_img">
+                      <img class="w-100" src="./resources/img/social-post/post_img.jpg" alt="post picture">
+                    </div>
+                    <div class="s_post_laud_area">
+                      <div class="s_post_laud">
+                        <p class="s_p_text text-left mb-0">Jason, Well done! It's really a nice opportunity for us.!!</p>
+                        <div class="s_pl_time text-right">02.06.2020 15:53pm</div>
+                      </div>
+                    </div>
+                    <div class="afulc_post_footer s_post_footer p-0 d-flex">
+                      <a href="#" class="view_posting d-block px-3 py-3">
+                        <img class="post_f_icon mr-1" src="./resources/img/icons/view_post.png" alt="view post">
+                        <span>View Posting</span>
+                      </a>
+                      <a href="#" class="del_unlike_post d-block px-3 py-3">
+                        <img class="post_f_icon mr-1" src="./resources/img/icons/Trash icon.png" alt="Trash">
+                        <span>Delete</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>            
+          </div>
+         </div>              
+       </div>       
+      </div>
+      <!--=== End of Auto Comment ===-->    
+    </main>
+    <!--=== End of Main Items ===-->
+  </div>
+ <!--=== End of  Body Item ===-->
+
+ <!-- Java script started -->
+ <script src="vendors/js/jquery-3.3.1.min.js"></script>
+ <!-- popper js -->
+ <script src="vendors/js/popper.min.js"></script>
+ <!-- bootstrap js -->
+ <script src="vendors/js/bootstrap.min.js"></script>
+ <!-- jquery preloader js for main content -->
+ <script src="vendors/js/jquery.preloadinator.min.js"></script>
+ <!-- Full Screen Window Plugin -->
+ <script src="vendors/js/jquery.fullscreen-min.js"></script>
+ <!-- Main/custom js -->
+ <script src="resources/js/main.js"></script>
+</body>
+</html>

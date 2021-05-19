@@ -1,0 +1,80 @@
+
+//mixins
+@mixin b-radius-common{
+ border-radius:5px;
+ -webkit-border-radius:5px;
+ -moz-border-radius:5px;
+ -ms-border-radius:5px;
+ -o-border-radius:5px;
+}
+@mixin b-radius-50{
+ border-radius:50%;
+ -webkit-border-radius:50%;
+ -moz-border-radius:50%;
+ -ms-border-radius:50%;
+ -o-border-radius:50%;
+}
+@mixin b-radius-5px{
+ border-radius:5px;
+ -webkit-border-radius:5px;
+ -moz-border-radius:5px;
+ -ms-border-radius:5px;
+ -o-border-radius:5px;
+}
+@mixin b-radius($values){
+	border-radius:$values;
+	-webkit-border-radius:$values;
+	-moz-border-radius:$values;
+	-ms-border-radius:$values;
+	-o-border-radius:$values;
+}
+@mixin b-radius-8px{
+ border-radius:8px;
+ -webkit-border-radius:8px;
+ -moz-border-radius:8px;
+ -ms-border-radius:8px;
+ -o-border-radius:8px;
+}
+@mixin transform-translate-50{
+ transform:translate(-50%, -50%);
+ -webkit-transform:translate(-50%, -50%);
+ -moz-transform:translate(-50%, -50%);
+ -ms-transform:translate(-50%, -50%);
+ -o-transform:translate(-50%, -50%);
+ left:50%;
+ top:50%;
+}
+@mixin transform-translate-custom($xaxis,$yaxis){
+	transform:translate($xaxis,$yaxis);
+	-webkit-transform:translate($xaxis,$yaxis);
+	-moz-transform:translate($xaxis,$yaxis);
+	-ms-transform:translate($xaxis,$yaxis);
+	-o-transform:translate($xaxis,$yaxis);
+}
+@mixin transform-scale($scale){
+	transform:scale($scale);
+	-webkit-transform:scale($scale);
+	-moz-transform:scale($scale);
+	-ms-transform:scale($scale);
+	-o-transform:scale($scale);
+}
+@mixin transform-rotate($rotate){
+	transform:rotate($rotate);
+	-webkit-transform:rotate($rotate);
+	-moz-transform:rotate($rotate);
+	-ms-transform:rotate($rotate);
+	-o-transform:rotate($rotate);
+}
+@mixin transition-all($gettr) {
+	transition:$gettr;
+	-webkit-transition:$gettr;
+	-moz-transition:$gettr;
+	-ms-transition:$gettr;
+	-o-transition:$gettr;
+}
+@mixin transition-03 {
+	@include transition-all(0.3s);
+}
+@mixin transition-06{
+	@include transition-all(0.6s);
+}

@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Affiliate Setting</title>
+ <!-- google fonts -->
+ <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap" rel="stylesheet">
+ <!-- fontawesome -->
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+ <!-- bootstrap css -->
+ <link rel="stylesheet" href="vendors/css/bootstrap.min.css">
+ <!-- style css -->
+ <link rel="stylesheet" href="./resources/css/main.css">
+</head>
+<body>
+   <!--=== Header Menu ===-->
+   <header id="headerMenu" class="px-3">
+    <div class="row h-82 align-items-center justify-content-center justify-content-lg-between">
+      <div class="col-lg-6 col-xl-6 d-flex order-2 order-lg-1 py-3 py-lg-0">
+        <a href="#" id="menuBar" class="h-icons menu_bar_icon">
+          <span class="hambarger"></span>
+        </a>
+        <button class="h-icons full-screen-wrap bg-transparent" onclick="$(document).toggleFullScreen()">
+          <span class="top-left fs-bar"></span>
+          <span class="top-left-horiz fs-bar"></span>
+          <span class="top-right fs-bar"></span>
+          <span class="top-right-horiz fs-bar"></span>
+          <span class="bottom-left fs-bar"></span>
+          <span class="bottom-left-horiz fs-bar"></span>
+          <span class="bottom-right fs-bar"></span>
+          <span class="bottom-right-horiz fs-bar"></span>
+        </button>       
+        <a href="#" id="settings-icon" class="h-icons settings_icon d-flex">
+          <div><img src="resources/img/icons/settings.png" alt="settings"></div>
+          <span class="pl-2">Settings</span>
+        </a>
+        <a href="#" class="site-logo">
+          <img src="resources/img/Logo-UC.png" alt="Site logo">
+        </a>
+      </div>
+      <div class="col-lg-6 col-xl-6 d-flex order-1 order-lg-2 py-3 py-lg-0 align-items-center justify-content-between justify-content-xl-end text-center">
+        <a href="#" class="h-icons2 h-task">
+          <img src="resources/img/icons/paste.png" alt="My tasks">
+          <span class="d-block text-nowrap">My Tasks</span>
+        </a>
+        <a href="#" class="h-icons2 h-shop">
+          <img src="resources/img/icons/bag.png" alt="My tasks">
+          <span class="d-block">Shop</span>
+        </a>
+        <a href="support-tickets.html" class="h-icons2 h-support">
+          <img src="resources/img/icons/headphone.png" alt="support">
+          <span class="d-block">Support</span>
+        </a>
+        <a href="new-support-ticket.html" class="h-icons2 h-helpdesk">
+          <img src="resources/img/icons/help.png" alt="helpDesk">
+          <span class="d-block">HelpDesk</span>
+        </a>         
+        <a href="#" class="h-icons2 h-history">
+          <img src="resources/img/icons/clock.png" alt="History">
+          <span class="d-block">History</span>
+        </a>                
+        <div class="profile-photoss pl-xl-5 pl-lg-4 pr-xl-4 d-flex flex-column flex-sm-row align-items-center">
+          <span class="user-name pr-0 pr-sm-3 order-2 order-sm-1">Emely Guerrero</span>
+          <span class="position-relative d-block order-1 order-sm-2">
+            <a href="#" class="d-block profile_pic"><img src="resources/img/small-profile-pic.png" alt="profile picture"></a>
+            <a href="#" class="logout-icon position-absolute">
+              <img class="lgt_icons" src="resources/img/icons/logout.png" alt="Logout">
+            </a>
+         </span>         
+        </div>
+      </div>
+    </div>    
+  </header>
+  <!--===End of Header Menu ===-->
+  <!--=== Body Item  ===-->
+  <div id="bodyItem" class="body-item position-relative">
+    <!--=== Side bar ===-->
+    <nav id="sidebarNav" class="sidebar_nav nav-active">
+      <!-- Categories -->
+      <div id="navAccordion" class="transition-5 opacity-h-0">
+         <!-- Management -->
+         <div class="side_nav_item mb-3">
+          <div id="navHeadingOne">
+            <button class="item-header collapsed w-100 px-3 d-flex justify-content-between align-items-center cursor-pointer" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            
+                <div><img src="resources/img/icons/carret.png" class="carret-icon" alt="angle"></div>
+                <h5>Management</h5>
+                <div><img src="resources/img/icons/copy-2.png" alt="create"></div>
+            </button>
+          </div>      
+          <div id="collapseOne" class="collapse" aria-labelledby="navHeadingOne" data-parent="#navAccordion">
+            <ul class="itemss pl-4 pr-3">
+              <li><a href="#">Dashboard</a></li>
+              <li><a href="#">Workflow Management</a></li>
+              <li><a href="campaign-management.html">Campaign Management</a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- Content Create -->
+        <div class="side_nav_item mb-3">
+          <div id="navHeadingTwo">
+            <button class="item-header collapsed w-100 px-3 d-flex justify-content-between align-items-center cursor-pointer" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+            
+                <div><img src="resources/img/icons/carret.png" class="carret-icon" alt="angle"></div>
+                <h5>Content Create</h5>
+                <div><img src="resources/img/icons/copy-2.png" alt="create"></div>
+            </button>
+          </div>      
+          <div id="collapseTwo" class="collapse" aria-labelledby="navHeadingTwo" data-parent="#navAccordion">
+            <ul class="itemss pl-4 pr-3">
+              <li><a href="content-create-panel.html">Content Create Panel</a></li>
+              <li><a href="#">PhotoEditor</a></li>
+              <li><a href="media-center.html">MediaCenter</a></li>
+              <li><a href="#">Social-Media Templates</a></li>
+              <li><a href="#">E-Mail Templates</a></li><li><a href="caption-template.html">Caption Template</a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- Social Marketing -->
+        <div class="side_nav_item mb-3">
+          <div id="navHeadingThree">
+            <button class="item-header collapsed w-100 px-3 d-flex justify-content-between align-items-center cursor-pointer" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+            
+                <div><img src="resources/img/icons/carret.png" class="carret-icon" alt="angle"></div>
+                <h5>Social Marketing</h5>
+                <div><img src="resources/img/icons/social marketing.png" alt="social marketing"></div>
+            </button>
+          </div>      
+          <div id="collapseThree" class="collapse" aria-labelledby="navHeadingThree" data-parent="#navAccordion">
+            <ul class="itemss pl-4 pr-3">
+              <li><a href="#">Content Library</a></li>
+              <li><a href="#">Task Management</a></li>
+              <li><a href="social-customize.html">Social-Collection</a></li>
+              <li><a href="auto-like.html">Auto-Like</a></li>
+              <li><a href="auto-comment.html">Auto-Comment</a></li>
+              <li><a href="#">Auto-DirectMessages</a></li>
+              <li><a href="auto-follow-unfollow.html">Auto Flow Unflow / Follow Accept</a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- Ads Marketing -->
+        <div class="side_nav_item mb-3">
+          <div id="navHeadingFour">
+            <button class="item-header collapsed w-100 px-3 d-flex justify-content-between align-items-center cursor-pointer" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+            
+              <div><img src="resources/img/icons/carret.png" class="carret-icon" alt="angle"></div>
+              <h5>Ads Marketing</h5>
+              <div><img src="resources/img/icons/ads.png" alt="Ads"></div>
+            </button>
+          </div>      
+          <div id="collapseFour" class="collapse" aria-labelledby="navHeadingFour" data-parent="#navAccordion">
+            <ul class="itemss pl-4 pr-3">
+              
+              <li><a href="#">Google Ads</a></li>
+              <li><a href="#">Facebook Ads</a></li>
+              <li><a href="#">Linkedin Ads</a></li>
+              <li><a href="#">Tiwtter Ads</a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- Influencer Marketing -->
+        <div class="side_nav_item mb-3">
+          <div id="navHeadingFive">
+            <button class="item-header collapsed w-100 px-3 d-flex justify-content-between align-items-center cursor-pointer" data-toggle="collapse" data-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+            
+              <div><img src="resources/img/icons/carret.png" class="carret-icon" alt="angle"></div>
+              <h5>Influencer Marketing</h5>
+              <div><img src="resources/img/icons/marketing.png" alt="Influencer Marketing"></div>
+            </button>
+          </div>      
+          <div id="collapseFive" class="collapse" aria-labelledby="navHeadingFive" data-parent="#navAccordion">
+            <ul class="itemss pl-4 pr-3">
+              <li><a href="#">Marketplace</a></li>
+              <li><a href="#">Pitchdeck</a></li>
+              <li><a href="#">My Tendors (Company only)</a></li>
+              <li><a href="#">My Profile (Influencers only)</a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- Mail Marketing -->
+        <div class="side_nav_item mb-3">
+          <div id="navHeadingSix">
+            <button class="item-header collapsed w-100 px-3 d-flex justify-content-between align-items-center cursor-pointer" data-toggle="collapse" data-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
+            
+              <div><img src="resources/img/icons/carret.png" class="carret-icon" alt="angle"></div>
+              <h5>Mail Marketing</h5>
+              <div><img src="resources/img/icons/mail-marketing.png" alt="Mail-Marketing"></div>
+            </button>
+          </div>      
+          <div id="collapseSix" class="collapse" aria-labelledby="navHeadingSix" data-parent="#navAccordion">
+            <ul class="itemss pl-4 pr-3">
+              <li><a href="#">Task Management</a></li>
+              <li><a href="#">Address Book / Directory</a></li>
+              <li><a href="#">Content Library</a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- Interactions -->
+        <div class="side_nav_item mb-3">
+          <div id="navHeadingSeven">
+            <button class="item-header collapsed w-100 px-3 d-flex justify-content-between align-items-center cursor-pointer" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="true" aria-controls="collapseSeven">
+            
+              <div><img src="resources/img/icons/carret.png" class="carret-icon" alt="angle"></div>
+              <h5>Interactions</h5>
+              <div><img src="resources/img/icons/ineractions.png" alt="Interactions"></div>
+            </button>
+          </div>      
+          <div id="collapseSeven" class="collapse" aria-labelledby="navHeadingSeven" data-parent="#navAccordion">
+            <ul class="itemss pl-4 pr-3">
+              <li><a href="#">Social Inbox</a></li>
+              <li><a href="#">Messenger Inbox
+                Whatsapp,Skype,Telegram</a></li>
+              <li><a href="#">E-Mail Inbox</a></li>
+              <li><a href="#">Ticket Inbox</a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- Analytics -->
+        <div class="side_nav_item mb-3">
+          <div id="navHeadingEight">
+            <button class="item-header collapsed w-100 px-3 d-flex justify-content-between align-items-center cursor-pointer" data-toggle="collapse" data-target="#collapseEight" aria-expanded="true" aria-controls="collapseEight">
+            
+              <div><img src="resources/img/icons/carret.png" class="carret-icon" alt="angle"></div>
+              <h5>Analytics</h5>
+              <div><img src="resources/img/icons/ineractions.png" alt="Interactions"></div>
+            </button>
+          </div>      
+          <div id="collapseEight" class="collapse" aria-labelledby="navHeadingEight" data-parent="#navAccordion">
+            <ul class="itemss pl-4 pr-3">
+              <li><a href="#">Ads Statistics</a></li>
+              <li><a href="index.html">Social Statistics</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- Settings -->
+      <div id="settingsList" class="settings-list transition-5">
+        <a href="#" id="settingBack" class="setting-back d-block"><i class="fa fa-angle-left pr-2" aria-hidden="true"></i>Back</a>
+        <ul class="pl-0">
+          <li><a href="#">Channels</a></li>
+          <li><a href="#">Profiles</a></li>
+          <li><a href="contract-details.html">Contract Details</a></li>
+          <li><a href="#">Affiliate Settings</a></li>
+          <li><a href="team-user-management.html">user management</a></li>
+          <li><a href="#">Security</a></li>
+          <li><a href="#">Guidelines</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!--=== End of Side bar ===-->
+    <!--=== Main Items ===-->
+    <main id="mainItem" class="main_item p-2 main_item-active">
+      <div class="body-header-content mb-3 p-3 pl-xl-5">
+				<div class="d-flex">
+						<h4>Affiliate Settings</h4>
+						<div id="iIcon" class="info-icons pt-1 pl-3 cursor-pointer">
+								<img src="resources/img/icons/info-icon.png" alt="info">
+						</div>
+				</div>
+				<p class="bheadertext pl-lg-4 display-none">An interesting implication of the 2007 study concerns the use of hand sanitizers by observant Muslims. Alcohol is forbidden (haram) to Muslims. Since the alcohol in hand sanitizer is absorbed into the blood, does that make these hand sanitizers haram?</p>
+			</div>
+      <!--==*******All Frame setup on this here*********== -->
+       <!--=== Affiliate Stats ===-->
+      <div id="affiliateStats" class="content-container pt-4 b-r-8">
+        <!-- preloader container -->
+        <div class="preloader-js">
+          <div class="preloader-area d-flex justify-content-center mt-5 pt-5">
+            <div class="preloader_img mt-5 pt-5">
+              <img src="./resources/img/icons/loading.png" alt="loading image">
+            </div> 
+          </div>                   
+        </div>
+        <!--x- End of preloader container -x-->
+        <div class="p-20">
+          <div class="row px-lg-4">
+            <div class="col-lg-8 mb-4 mb-lg-0">
+              <!-- link buttons -->
+              <div class="row justify-content-around mx-auto link-group">
+                <div class="col-6 col-sm-4 px-md-4 d-flex justify-content-center justify-content-md-start">
+                  <div class="link-button b-r-5 text-center">
+                    <span class="d-block">Total</span>
+                    <span class="d-block">Click on link</span>
+                    <span class="d-block mx-auto link-icon mt-2 mb-3">
+                      <img src="resources/img/icons/click icon.png" alt="click icon">
+                    </span>
+                    <span class="link-numaric d-block">40</span>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-4 px-md-4 d-flex justify-content-center justify-content-md-end justify-content-lg-center">
+                  <div  class="link-button b-r-5 text-center">
+                    <span class="d-block">Acquired</span>
+                    <span class="d-block">Users</span>
+                    <span class="d-block mx-auto link-icon mt-2 mb-3">
+                      <img src="resources/img/icons/user plus icon.png" alt="user icon">
+                    </span>
+                    <span class="link-numaric d-block">16</span>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-4 px-md-4 d-flex justify-content-center justify-content-md-center justify-content-lg-end">
+                  <div class="link-button b-r-5 text-center">
+                    <span class="d-block">Total</span>
+                    <span class="d-block">Commisions</span>
+                    <span class="d-block mx-auto link-icon mt-2 mb-3">
+                      <img src="resources/img/icons/procetn icon.png" alt="percent icon">
+                    </span>
+                    <span class="link-numaric d-block">130.23€</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 text-center">
+              <p>This is your personal affiliate-Link</p>
+              <div class="get-affiliate-link">
+                <div class="form-group position-relative">
+                  <input type="text" class="form-control" value="http://uc.schmidt-tudl-it.de/He7D82B" id="affiliateLink">
+                  <button class="position-absolute bg-transparent copy-icon" onclick="copyLinkFun()" onmouseout="outCopyFun()">
+                    <img src="resources/img/icons/copy.png" alt="copy link">
+                  </button>
+                  <span class="tooltiptext b-r-5 dismiss-w-h" id="linkToolTip"></span>
+                </div> 
+              </div>
+              <p class="small-text">Share it with your friends and get  (commiserate) % commission</p>              
+            </div>
+          </div>
+        </div>
+        <!-- Request Cashout -->
+        <div class="request-cashout p-20 b-r-5 bg-blue-c text-white">
+          <div class="row px-lg-5 mx-lg-2 justify-content-center text-center">
+            <div class="col-xl-5 col-lg-6">
+              <p class="m-0 py-2">The following amount will be credited to your next billing:</p>
+            </div>
+            <div class="col-xl-4 col-lg-3">
+              <hr class="hr-border">
+            </div>
+            <div class="col-xl-3 col-lg-3">
+              <span class="request-btn b-r-5">24.99€</span>
+            </div>
+          </div>
+        </div>
+        <!-- Cashout & commisions tables -->
+        <div class="cashout-commissions text-center p-5">
+          <div class="row b-r-5 justify-content-center overflow-hidden">
+            <div class="col-lg-10 pr-lg-4 table-custom your-cashout py-4">
+              <h3 class="mb-4">Affiliate Details</h3>
+              <table>
+                <thead>
+                  <tr>
+                    <th>Date</th>
+                    <th>Amount</th>
+                    <th>Type</th>
+                    <th>Status</th>
+                  </tr>
+                </thead>          
+                <tbody>
+                  <tr>
+                    <td><span>08.09.2020</span> <br/> 18:05</td>
+                    <td>+13.52€</td>
+                    <td>Affiliate Credit</td>
+                    <td class="status status-pending">
+                      <img src="resources/img/icons/Pend icon 2.png" class="mr-2" alt="Pending">
+                      Pending
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span>05.09.2020</span> <br/> 11:14</td>
+                    <td>+11.47€</td>
+                    <td>Affiliate Credit</td>
+                    <td class="status status-rejected">
+                      <img src="resources/img/icons/cancel icon.png" class="mr-2" alt="Rejected">
+                      Rejected
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span>01.09.2020</span> <br/> 20:30</td>
+                    <td>-9.02€</td>
+                    <td>Charge to <a href="#">Invoice #20120</a></td>
+                    <td class="status status-complete">
+                      <img src="resources/img/icons/Vector.png" class="mr-2" alt="Complete">
+                      Complete
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--=== End of Affiliate Stats ===-->    
+    </main>
+    <!--=== End of Main Items ===-->
+  </div>
+ <!--=== End of  Body Item ===-->
+
+
+
+ <!-- Java script started -->
+ <script src="vendors/js/jquery-3.3.1.min.js"></script>
+ <!-- popper js -->
+ <script src="vendors/js/popper.min.js"></script>
+ <!-- bootstrap js -->
+ <script src="vendors/js/bootstrap.min.js"></script>
+ <!-- jquery preloader js for main content -->
+ <script src="vendors/js/jquery.preloadinator.min.js"></script>
+ <!-- Full Screen Window Plugin -->
+ <script src="vendors/js/jquery.fullscreen-min.js"></script>
+ <!-- Main/custom js -->
+ <script src="resources/js/main.js"></script>
+</body>
+</html>

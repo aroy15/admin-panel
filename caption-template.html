@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>caption-template</title>
+ <!-- google fonts -->
+ <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap" rel="stylesheet">
+ <!-- fontawesome -->
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+ <!-- bootstrap css -->
+	<link rel="stylesheet" href="vendors/css/bootstrap.min.css">
+ <!-- Dropzone css -->
+	<link rel="stylesheet" href="vendors/css/dropzone.min.css">
+	 <!-- magnific-popup css -->
+		<link rel="stylesheet" href="vendors/css/magnific-popup.css">
+ <!-- style css -->
+ <link rel="stylesheet" href="./resources/css/main.css">
+</head>
+<body>
+ <!--=== Header Menu ===-->
+	<header id="headerMenu" class="px-3">
+		<div class="row h-82 align-items-center justify-content-center justify-content-lg-between">
+				<div class="col-lg-6 col-xl-6 d-flex order-2 order-lg-1 py-3 py-lg-0">
+						<a href="#" id="menuBar" class="h-icons menu_bar_icon">
+								<span class="hambarger"></span>
+						</a>
+						<button class="h-icons full-screen-wrap bg-transparent" onclick="$(document).toggleFullScreen()">
+							<span class="top-left fs-bar"></span>
+							<span class="top-left-horiz fs-bar"></span>
+							<span class="top-right fs-bar"></span>
+							<span class="top-right-horiz fs-bar"></span>
+							<span class="bottom-left fs-bar"></span>
+							<span class="bottom-left-horiz fs-bar"></span>
+							<span class="bottom-right fs-bar"></span>
+							<span class="bottom-right-horiz fs-bar"></span>
+					</button>       
+						<a href="#" id="settings-icon" class="h-icons settings_icon d-flex">
+								<div><img src="resources/img/icons/settings.png" alt="settings"></div>
+								<span class="pl-2">Settings</span>
+						</a>
+						<a href="#" class="site-logo">
+								<img src="resources/img/Logo-UC.png" alt="Site logo">
+						</a>
+				</div>
+				<div class="col-lg-6 col-xl-6 d-flex order-1 order-lg-2 py-3 py-lg-0 align-items-center justify-content-between justify-content-xl-end text-center">
+						<a href="#" class="h-icons2 h-task">
+								<img src="resources/img/icons/paste.png" alt="My tasks">
+								<span class="d-block text-nowrap">My Tasks</span>
+						</a>
+						<a href="#" class="h-icons2 h-shop">
+								<img src="resources/img/icons/bag.png" alt="My tasks">
+								<span class="d-block">Shop</span>
+						</a>
+						<a href="support-tickets.html" class="h-icons2 h-support">
+								<img src="resources/img/icons/headphone.png" alt="support">
+								<span class="d-block">Support</span>
+						</a>
+						<a href="new-support-ticket.html" class="h-icons2 h-helpdesk">
+								<img src="resources/img/icons/help.png" alt="helpDesk">
+								<span class="d-block">HelpDesk</span>
+						</a>         
+						<a href="#" class="h-icons2 h-history">
+								<img src="resources/img/icons/clock.png" alt="History">
+								<span class="d-block">History</span>
+						</a>                
+						<div class="profile-photoss pl-xl-5 pl-lg-4 pr-xl-4 d-flex flex-column flex-sm-row align-items-center">
+								<span class="user-name pr-0 pr-sm-3 order-2 order-sm-1">Emely Guerrero</span>
+								<span class="position-relative d-block order-1 order-sm-2">
+										<a href="#" class="d-block profile_pic"><img src="resources/img/small-profile-pic.png" alt="profile picture"></a>
+										<a href="#" class="logout-icon position-absolute">
+												<img class="lgt_icons" src="resources/img/icons/logout.png" alt="Logout">
+										</a>
+							</span>         
+						</div>
+				</div>
+		</div>    
+</header>
+<!--===End of Header Menu ===-->
+<!--=== Body Item  ===-->
+<div id="bodyItem" class="body-item position-relative">
+		<!--=== Side bar ===-->
+		<nav id="sidebarNav" class="sidebar_nav nav-active">
+			<!-- Categories -->
+			<div id="navAccordion" class="transition-5">
+						<!-- Management -->
+						<div class="side_nav_item mb-3">
+							<div id="navHeadingOne">
+									<button class="item-header collapsed w-100 px-3 d-flex justify-content-between align-items-center cursor-pointer" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+									
+													<div><img src="resources/img/icons/carret.png" class="carret-icon" alt="angle"></div>
+													<h5>Management</h5>
+													<div><img src="resources/img/icons/copy-2.png" alt="create"></div>
+									</button>
+							</div>      
+							<div id="collapseOne" class="collapse" aria-labelledby="navHeadingOne" data-parent="#navAccordion">
+									<ul class="itemss pl-4 pr-3">
+											<li><a href="#">Dashboard</a></li>
+											<li><a href="#">Workflow Management</a></li>
+											<li><a href="campaign-management.html">Campaign Management</a></li>
+									</ul>
+							</div>
+					</div>
+					<!-- Content Create -->
+					<div class="side_nav_item mb-3">
+							<div id="navHeadingTwo">
+									<button class="item-header collapsed w-100 px-3 d-flex justify-content-between align-items-center cursor-pointer" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+									
+													<div><img src="resources/img/icons/carret.png" class="carret-icon" alt="angle"></div>
+													<h5>Content Create</h5>
+													<div><img src="resources/img/icons/copy-2.png" alt="create"></div>
+									</button>
+							</div>      
+							<div id="collapseTwo" class="collapse" aria-labelledby="navHeadingTwo" data-parent="#navAccordion">
+									<ul class="itemss pl-4 pr-3">
+											<li><a href="content-create-panel.html">Content Create Panel</a></li>
+											<li><a href="#">PhotoEditor</a></li>
+											<li><a href="media-center.html">MediaCenter</a></li>
+											<li><a href="#">Social-Media Templates</a></li>
+											<li><a href="#">E-Mail Templates</a></li><li><a href="#">Caption Template</a></li>
+									</ul>
+							</div>
+					</div>
+					<!-- Social Marketing -->
+					<div class="side_nav_item mb-3">
+							<div id="navHeadingThree">
+									<button class="item-header collapsed w-100 px-3 d-flex justify-content-between align-items-center cursor-pointer" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+									
+													<div><img src="resources/img/icons/carret.png" class="carret-icon" alt="angle"></div>
+													<h5>Social Marketing</h5>
+													<div><img src="resources/img/icons/social marketing.png" alt="social marketing"></div>
+									</button>
+							</div>      
+							<div id="collapseThree" class="collapse" aria-labelledby="navHeadingThree" data-parent="#navAccordion">
+									<ul class="itemss pl-4 pr-3">
+											<li><a href="#">Content Library</a></li>
+											<li><a href="#">Task Management</a></li>
+											<li><a href="social-customize.html">Social-Collection</a></li>
+											<li><a href="auto-like.html">Auto-Like</a></li>
+											<li><a href="auto-comment.html">Auto-Comment</a></li>
+											<li><a href="#">Auto-DirectMessages</a></li>
+											<li><a href="auto-follow-unfollow.html">Auto Flow Unflow / Follow Accept</a></li>
+									</ul>
+							</div>
+					</div>
+					<!-- Ads Marketing -->
+					<div class="side_nav_item mb-3">
+							<div id="navHeadingFour">
+									<button class="item-header collapsed w-100 px-3 d-flex justify-content-between align-items-center cursor-pointer" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+									
+											<div><img src="resources/img/icons/carret.png" class="carret-icon" alt="angle"></div>
+											<h5>Ads Marketing</h5>
+											<div><img src="resources/img/icons/ads.png" alt="Ads"></div>
+									</button>
+							</div>      
+							<div id="collapseFour" class="collapse" aria-labelledby="navHeadingFour" data-parent="#navAccordion">
+									<ul class="itemss pl-4 pr-3">
+											
+											<li><a href="#">Google Ads</a></li>
+											<li><a href="#">Facebook Ads</a></li>
+											<li><a href="#">Linkedin Ads</a></li>
+											<li><a href="#">Tiwtter Ads</a></li>
+									</ul>
+							</div>
+					</div>
+					<!-- Influencer Marketing -->
+					<div class="side_nav_item mb-3">
+							<div id="navHeadingFive">
+									<button class="item-header collapsed w-100 px-3 d-flex justify-content-between align-items-center cursor-pointer" data-toggle="collapse" data-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+									
+											<div><img src="resources/img/icons/carret.png" class="carret-icon" alt="angle"></div>
+											<h5>Influencer Marketing</h5>
+											<div><img src="resources/img/icons/marketing.png" alt="Influencer Marketing"></div>
+									</button>
+							</div>      
+							<div id="collapseFive" class="collapse" aria-labelledby="navHeadingFive" data-parent="#navAccordion">
+									<ul class="itemss pl-4 pr-3">
+											<li><a href="#">Marketplace</a></li>
+											<li><a href="#">Pitchdeck</a></li>
+											<li><a href="#">My Tendors (Company only)</a></li>
+											<li><a href="#">My Profile (Influencers only)</a></li>
+									</ul>
+							</div>
+					</div>
+					<!-- Mail Marketing -->
+					<div class="side_nav_item mb-3">
+							<div id="navHeadingSix">
+									<button class="item-header collapsed w-100 px-3 d-flex justify-content-between align-items-center cursor-pointer" data-toggle="collapse" data-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
+									
+											<div><img src="resources/img/icons/carret.png" class="carret-icon" alt="angle"></div>
+											<h5>Mail Marketing</h5>
+											<div><img src="resources/img/icons/mail-marketing.png" alt="Mail-Marketing"></div>
+									</button>
+							</div>      
+							<div id="collapseSix" class="collapse" aria-labelledby="navHeadingSix" data-parent="#navAccordion">
+									<ul class="itemss pl-4 pr-3">
+											<li><a href="#">Task Management</a></li>
+											<li><a href="#">Address Book / Directory</a></li>
+											<li><a href="#">Content Library</a></li>
+									</ul>
+							</div>
+					</div>
+					<!-- Interactions -->
+					<div class="side_nav_item mb-3">
+							<div id="navHeadingSeven">
+									<button class="item-header collapsed w-100 px-3 d-flex justify-content-between align-items-center cursor-pointer" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="true" aria-controls="collapseSeven">
+									
+											<div><img src="resources/img/icons/carret.png" class="carret-icon" alt="angle"></div>
+											<h5>Interactions</h5>
+											<div><img src="resources/img/icons/ineractions.png" alt="Interactions"></div>
+									</button>
+							</div>      
+							<div id="collapseSeven" class="collapse" aria-labelledby="navHeadingSeven" data-parent="#navAccordion">
+									<ul class="itemss pl-4 pr-3">
+											<li><a href="#">Social Inbox</a></li>
+											<li><a href="#">Messenger Inbox
+													Whatsapp,Skype,Telegram</a></li>
+											<li><a href="#">E-Mail Inbox</a></li>
+											<li><a href="#">Ticket Inbox</a></li>
+									</ul>
+							</div>
+					</div>
+					<!-- Analytics -->
+					<div class="side_nav_item mb-3">
+							<div id="navHeadingEight">
+									<button class="item-header collapsed w-100 px-3 d-flex justify-content-between align-items-center cursor-pointer" data-toggle="collapse" data-target="#collapseEight" aria-expanded="true" aria-controls="collapseEight">
+									
+											<div><img src="resources/img/icons/carret.png" class="carret-icon" alt="angle"></div>
+											<h5>Analytics</h5>
+											<div><img src="resources/img/icons/ineractions.png" alt="Interactions"></div>
+									</button>
+							</div>      
+							<div id="collapseEight" class="collapse" aria-labelledby="navHeadingEight" data-parent="#navAccordion">
+									<ul class="itemss pl-4 pr-3">
+											<li><a href="#">Ads Statistics</a></li>
+											<li><a href="index.html">Social Statistics</a></li>
+									</ul>
+							</div>
+					</div>
+			</div>
+			<!-- Settings -->
+			<div id="settingsList" class="settings-list transition-5 opacity-h-0">
+					<a href="#" id="settingBack" class="setting-back d-block"><i class="fa fa-angle-left pr-2" aria-hidden="true"></i>Back</a>
+					<ul class="pl-0">
+							<li><a href="#">Channels</a></li>
+							<li><a href="#">Profiles</a></li>
+							<li><a href="contract-details.html">Contract Details</a></li>
+							<li><a href="affliate-setting.html">Affiliate Settings</a></li>
+							<li><a href="team-user-management.html">user management</a></li>
+							<li><a href="#">Security</a></li>
+							<li><a href="#">Guidelines</a></li>
+					</ul>
+			</div>
+		</nav>
+		<!--=== End of Side bar ===-->
+		<!--=== Main Items ===-->
+		<main id="mainItem" class="main_item p-2 main_item-active">
+			<div class="body-header-content mb-3 p-3 pl-xl-5">
+				<div class="d-flex">
+						<h4>Caption Template</h4>
+						<div id="iIcon" class="info-icons pt-1 pl-3 cursor-pointer">
+								<img src="resources/img/icons/info-icon.png" alt="info">
+						</div>
+				</div>
+				<p class="bheadertext pl-lg-4 display-none">An interesting implication of the 2007 study concerns the use of hand sanitizers by observant Muslims. Alcohol is forbidden (haram) to Muslims. Since the alcohol in hand sanitizer is absorbed into the blood, does that make these hand sanitizers haram?</p>
+			</div>
+				<!--==*******All Frame setup on this here*********== -->
+				
+     <!--=== Caption Template ===-->
+			<div id="captionTemplate" class="caption-template content-container p-4 p-lg-5 b-r-8">
+				<!-- preloader container -->
+				<div class="preloader-js">
+					<div class="preloader-area d-flex justify-content-center mt-5 pt-5">
+							<div class="preloader_img mt-5 pt-5">
+									<img src="./resources/img/icons/loading.png" alt="loading image">
+							</div> 
+					</div>                   
+			</div>
+			<!--x- End of preloader container -x-->
+				<div class="captions-container mx-auto">
+					<a href="add-caption-template.html" class="add-cap-btn custom-btn btn-skyblue-c d-block ml-auto">+ Add Caption</a>
+					<div class="cap-inner pr-xl-5 mr-xl-5 my-5">
+						<div class="row">
+							<div class="col-md-6 col-lg-4 mb-4 dismiss-container-js">
+								<div class="c-post-container b-r-5">
+									<div class="c-caption d-flex justify-content-between b-r-5 py-4 px-3">
+										<span class="c-title">art caption</span>
+										<button type="button" class="close-icon bg-transparent dismiss-click-js">&times;</button>
+									</div>
+									<div class="c-post text-center px-4 pt-4 pb-3">
+										<p class="mb-0 pb-0">#art#tagblender#artist#artistic#artists#arte#dibujo#myart#artwork#illustration#graphicdesign#graphic#color#colour#colorful#painting#drawing#drawings#markers#paint</p>
+									</div>
+									<button type="button" class="c-edit bg-transparent d-block ml-auto pr-2 pb-2 cursor-pointer">
+										<i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+									</button>
+								</div>							
+							</div>
+							<div class="col-md-6 col-lg-4 mb-4 dismiss-container-js">
+								<div class="c-post-container b-r-5">
+									<div class="c-caption d-flex justify-content-between b-r-5 py-4 px-3">
+										<span class="c-title">text</span>
+										<button type="button" class="close-icon bg-transparent dismiss-click-js">&times;</button>
+									</div>
+									<div class="c-post text-center px-4 pt-4 pb-3">
+										<p class="mb-0 pb-0">There’s a voice that keeps on calling me. Down the road, that’s where I’ll always be. Every stop I make, I make a new friend...</p>
+									</div>
+									<button type="button" class="c-edit bg-transparent d-block ml-auto pr-2 pb-2 cursor-pointer">
+										<i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+									</button>
+								</div>							
+							</div>
+							<div class="col-md-6 col-lg-4 mb-4 dismiss-container-js">
+								<div class="c-post-container b-r-5">
+									<div class="c-caption d-flex justify-content-between b-r-5 py-4 px-3">
+										<span class="c-title">video hashtag</span>
+										<button type="button" class="close-icon bg-transparent dismiss-click-js">&times;</button>
+									</div>
+									<div class="c-post text-center px-4 pt-4 pb-3">
+										<p class="mb-0 pb-0">#youtube #youtuber #instagram #music #love #like #follow #tiktok #youtubers #spotify #video #youtubechannel #memes #gaming #facebook #subscribe</p>
+									</div>
+									<button type="button" class="c-edit bg-transparent d-block ml-auto pr-2 pb-2 cursor-pointer">
+										<i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+									</button>
+								</div>							
+							</div>
+							<div class="col-md-6 col-lg-4 mb-4 dismiss-container-js">
+								<div class="c-post-container b-r-5">
+									<div class="c-caption d-flex justify-content-between b-r-5 py-4 px-3">
+										<span class="c-title">text</span>
+										<button type="button" class="close-icon bg-transparent dismiss-click-js">&times;</button>
+									</div>
+									<div class="c-post text-center px-4 pt-4 pb-3">
+										<p class="mb-0 pb-0">Top Cat! The most effectual Top Cat! Who’s intellectual close friends get to call him T.C., providing it’s with dignity. Top Cat!</p>
+									</div>
+									<button type="button" class="c-edit bg-transparent d-block ml-auto pr-2 pb-2 cursor-pointer">
+										<i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+									</button>
+								</div>							
+							</div>
+							<div class="col-md-6 col-lg-4 mb-4 dismiss-container-js">
+								<div class="c-post-container b-r-5">
+									<div class="c-caption d-flex justify-content-between b-r-5 py-4 px-3">
+										<span class="c-title">text</span>
+										<button type="button" class="close-icon bg-transparent dismiss-click-js">&times;</button>
+									</div>
+									<div class="c-post text-center px-4 pt-4 pb-3">
+										<p class="mb-0 pb-0">Hong Kong Phooey, number one super guy. Hong Kong Phooey, quicker than the human eye. He’s got style, and an amazing car.</p>
+									</div>
+									<button type="button" class="c-edit bg-transparent d-block ml-auto pr-2 pb-2 cursor-pointer">
+										<i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+									</button>
+								</div>							
+							</div>
+							<div class="col-md-6 col-lg-4 mb-4 dismiss-container-js">
+								<div class="c-post-container b-r-5">
+									<div class="c-caption d-flex justify-content-between b-r-5 py-4 px-3">
+										<span class="c-title">text</span>
+										<button type="button" class="close-icon bg-transparent dismiss-click-js">&times;</button>
+									</div>
+									<div class="c-post text-center px-4 pt-4 pb-3">
+										<p class="mb-0 pb-0">#snapchat #love #like #follow #instagood #selfie #snapchatfilter #snapchatfun #likeforlikes #snap #tiktok #followforfollowback #me</p>
+									</div>
+									<button type="button" class="c-edit bg-transparent d-block ml-auto pr-2 pb-2 cursor-pointer">
+										<i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+									</button>
+								</div>							
+							</div>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+ <!--=== End of Caption Template ===-->
+		</main>
+		<!--=== End of Main Items ===-->
+</div>
+<!--=== End of  Body Item ===-->  
+
+
+
+ <!-- Java script started -->
+ <script src="vendors/js/jquery-3.3.1.min.js"></script>
+ <!-- popper js -->
+ <script src="vendors/js/popper.min.js"></script>
+ <!-- bootstrap js -->
+	<script src="vendors/js/bootstrap.min.js"></script>
+ <!-- Dropzone js -->
+	<script src="vendors/js/dropzone.js"></script>
+	<!-- magnific-popup js -->
+ <script class="magnifics" src="vendors/js/jquery.magnific-popup.min.js"></script>
+ <!-- jquery preloader js for main content -->
+ <script src="vendors/js/jquery.preloadinator.min.js"></script>
+ <!-- Full Screen Window Plugin -->
+ <script src="vendors/js/jquery.fullscreen-min.js"></script>
+ <!-- Main/custom js -->
+ <script src="resources/js/main.js"></script>
+</body>
+</html>
