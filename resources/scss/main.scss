@@ -23,6 +23,11 @@
 #headerMenu{
 	background-color:#0C4266;
 	color:$white;
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	z-index:11;
 	.site-logo{
 		max-width:300px;
 		width:100%;
@@ -169,11 +174,11 @@
 	/*category side bar*/	
 	.sidebar_nav{
 		width:250px;
-		height:100%;
+		height:calc(100vh - 70px);
+		top:82px;
 		overflow-x:hidden;
-		position:absolute;
+		position:fixed;
 		left:-250px;
-		top:0;
 		opacity: 0;
 		@include transition-06();
 		background-color: #177BBD;
@@ -287,7 +292,8 @@
 			width:calc(100% - 250px);
 			margin-left:250px;
 		}
-		.body-header-content{			
+		.body-header-content{	
+			margin-top:82px;		
 			.info-icons{
 				img{
 					@include transition-all(0.2s);
