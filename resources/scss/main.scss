@@ -289,7 +289,7 @@
 		background-color:$gray-light1;
 		@include transition-all(0.5s);
 		&.main_item-active{
-			width:calc(100% - 250px);
+			width:calc(100% - 250px); 
 			margin-left:250px;
 		}
 		.body-header-content{	

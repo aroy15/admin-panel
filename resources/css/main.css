@@ -4937,7 +4937,7 @@ input[type="checkbox"].switch_box:checked:after {
   }
   .afulc_container .afulc_inner .afulc_rightarea .afulc_left_arrow {
     position: relative;
-    left: -17px;
+    left: -17px; 
   }
   .afulc_container .afulc_inner .afulc_rightarea .afulc_collapse_btn {
     top: 130px;
