@@ -177,6 +177,7 @@
 	#bodyItem{
 		.sidebar_nav{
 			top:150px;
+			height: calc(100vh - 150px);
 		}
 		.main_item{			
 			.body-header-content{
@@ -448,6 +449,7 @@
 	#bodyItem{
 		.sidebar_nav{
 			top:180px;
+			height: calc(100vh - 180px);
 		}
 		.main_item{			
 			.body-header-content{

@@ -1113,7 +1113,7 @@ input[type="checkbox"].switch_box:checked:after {
 
 #bodyItem .sidebar_nav {
   width: 250px;
-  height: calc(100vh - 70px);
+  height: calc(100vh - 82px);
   top: 82px;
   overflow-x: hidden;
   position: fixed;
@@ -4849,6 +4849,7 @@ input[type="checkbox"].switch_box:checked:after {
   }
   #bodyItem .sidebar_nav {
     top: 150px;
+    height: calc(100vh - 150px);
   }
   #bodyItem .main_item .body-header-content {
     margin-top: 150px;
@@ -4937,7 +4938,7 @@ input[type="checkbox"].switch_box:checked:after {
   }
   .afulc_container .afulc_inner .afulc_rightarea .afulc_left_arrow {
     position: relative;
-    left: -17px; 
+    left: -17px;
   }
   .afulc_container .afulc_inner .afulc_rightarea .afulc_collapse_btn {
     top: 130px;
@@ -5045,6 +5046,7 @@ input[type="checkbox"].switch_box:checked:after {
   }
   #bodyItem .sidebar_nav {
     top: 180px;
+    height: calc(100vh - 180px);
   }
   #bodyItem .main_item .body-header-content {
     margin-top: 180px;
